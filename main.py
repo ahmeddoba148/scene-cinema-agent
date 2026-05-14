@@ -129,7 +129,7 @@ def format_movies_list(movies, last_check):
     return msg
 
 
-def update_movies_cache_and_notify_if_changed():
+def update_movies_cache_and_notify_if_changed(send_first_list=False):
     old_cache = get_cached_movies()
     old_movies = old_cache.get("movies", [])
 
@@ -152,10 +152,10 @@ def update_movies_cache_and_notify_if_changed():
 
         print(f"Movies cache updated: {len(new_movies)} movies")
 
-        if not old_movies:
+        if send_first_list and new_movies:
             send_msg(format_movies_list(new_movies, cache["last_check_utc"]))
 
-        elif added or removed:
+        elif old_movies and (added or removed):
             msg = "🎬 حصل تغيير في قائمة أفلام Scene Cinemas\n\n"
             msg += f"🕒 آخر تحديث: {cache['last_check_utc']}\n\n"
 
@@ -171,7 +171,8 @@ def update_movies_cache_and_notify_if_changed():
                     msg += f"- {title}\n"
                 msg += "\n"
 
-            msg += "📌 لاختيار فيلم ابعت رقم الفيلم فقط.\nمثال:\n2"
+            msg += "📌 ابعت /start لعرض القائمة كاملة.\n"
+            msg += "أو ابعت رقم الفيلم من آخر قائمة."
 
             send_msg(msg)
 
@@ -248,13 +249,17 @@ def select_movie_by_number(text, state):
     movies = cache.get("movies", [])
 
     if not movies:
-        send_msg("❌ قائمة الأفلام لم تتحدث بعد. استنى أول تشغيل للبرنامج.")
+        cache = update_movies_cache_and_notify_if_changed(send_first_list=False)
+        movies = cache.get("movies", [])
+
+    if not movies:
+        send_msg("❌ قائمة الأفلام لم تتحدث بعد. شغّل Workflow مرة أخرى.")
         return True
 
     index = movie_num - 1
 
     if index < 0 or index >= len(movies):
-        send_msg("❌ رقم الفيلم غير صحيح. اختار رقم من آخر قائمة أفلام.")
+        send_msg("❌ رقم الفيلم غير صحيح. ابعت /start لعرض القائمة.")
         return True
 
     movie = movies[index]
@@ -279,7 +284,7 @@ def add_selected_movie_with_date(text, state, watchlist):
 
     if not selected_movie:
         state["step"] = None
-        send_msg("❌ حصل خطأ في اختيار الفيلم. ابعت رقم الفيلم من جديد.")
+        send_msg("❌ حصل خطأ في اختيار الفيلم. ابعت /start ثم اختار رقم الفيلم.")
         return True
 
     date = text.strip()
@@ -339,19 +344,22 @@ def handle_text_message(text, state, watchlist):
         return changed
 
     if text == "/start":
-        send_msg(
-            "🎬 أهلا يا أحمد\n\n"
-            "طريقة الاستخدام:\n\n"
-            "1️⃣ استنى قائمة الأفلام اللي بتتحدث تلقائيًا.\n"
-            "2️⃣ ابعت رقم الفيلم فقط.\n"
-            "3️⃣ بعدها ابعت التاريخ بالشكل ده:\n"
-            "22-05-2026\n\n"
-            "الأوامر:\n"
-            "/list - عرض قائمة المراقبة\n"
-            "/clear - مسح كل المراقبة\n\n"
-            "مثال:\n"
-            "2"
-        )
+        cache = get_cached_movies()
+        movies = cache.get("movies", [])
+        last_check = cache.get("last_check_utc", "Unknown")
+
+        if not movies:
+            cache = update_movies_cache_and_notify_if_changed(send_first_list=False)
+            movies = cache.get("movies", [])
+            last_check = cache.get("last_check_utc", "Unknown")
+
+        if movies:
+            send_msg(format_movies_list(movies, last_check))
+        else:
+            send_msg(
+                "❌ لم أقدر أجيب قائمة الأفلام حاليًا.\n"
+                "جرب تشغيل الـ Workflow مرة أخرى."
+            )
 
     elif text == "/list" or text == "قائمة المراقبة":
         send_msg(format_watchlist(watchlist))
@@ -375,11 +383,10 @@ def handle_text_message(text, state, watchlist):
     else:
         send_msg(
             "❌ مش فاهم الأمر.\n\n"
-            "ابعت رقم الفيلم من آخر قائمة أفلام.\n"
+            "ابعت /start لعرض قائمة الأفلام.\n"
+            "بعدها ابعت رقم الفيلم فقط.\n\n"
             "مثال:\n"
-            "2\n\n"
-            "أو استخدم:\n"
-            "/list"
+            "2"
         )
 
     return changed
@@ -481,7 +488,7 @@ def check_watchlist():
 
 
 def main():
-    update_movies_cache_and_notify_if_changed()
+    update_movies_cache_and_notify_if_changed(send_first_list=False)
 
     handle_bot_updates()
 
