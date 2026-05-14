@@ -14,9 +14,7 @@ WATCHLIST_FILE = "watchlist.json"
 STATE_FILE = "bot_state.json"
 MOVIES_CACHE_FILE = "movies_cache.json"
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
+HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 
 def now_utc():
@@ -42,7 +40,6 @@ def send_msg(text):
 def load_json(path, default):
     if not os.path.exists(path):
         return default
-
     try:
         with open(path, "r", encoding="utf-8") as f:
             return json.load(f)
@@ -59,19 +56,9 @@ def commit_changes():
     try:
         subprocess.run(["git", "config", "user.name", "cinema-bot"], check=True)
         subprocess.run(["git", "config", "user.email", "cinema-bot@users.noreply.github.com"], check=True)
-
-        subprocess.run(
-            ["git", "add", WATCHLIST_FILE, STATE_FILE, MOVIES_CACHE_FILE],
-            check=True
-        )
-
-        subprocess.run(
-            ["git", "commit", "-m", "Update cinema bot data"],
-            check=False
-        )
-
+        subprocess.run(["git", "add", WATCHLIST_FILE, STATE_FILE, MOVIES_CACHE_FILE], check=True)
+        subprocess.run(["git", "commit", "-m", "Update cinema bot data"], check=False)
         subprocess.run(["git", "push"], check=False)
-
     except Exception as e:
         print("Git error:", e)
 
@@ -91,10 +78,7 @@ def get_movies():
 
         if title and href and title.lower() not in seen:
             seen.add(title.lower())
-            movies.append({
-                "title": title,
-                "url": href
-            })
+            movies.append({"title": title, "url": href})
 
     return movies
 
@@ -108,11 +92,7 @@ def get_cached_movies():
 
 
 def movie_titles_set(movies):
-    return set(
-        m["title"].strip().lower()
-        for m in movies
-        if m.get("title")
-    )
+    return set(m["title"].strip().lower() for m in movies if m.get("title"))
 
 
 def format_movies_list(movies, last_check):
@@ -123,13 +103,15 @@ def format_movies_list(movies, last_check):
     for i, movie in enumerate(movies, 1):
         msg += f"{i}. {movie['title']}\n"
 
-    msg += "\n📌 لاختيار فيلم ابعت رقم الفيلم فقط.\n"
-    msg += "مثال:\n2"
+    msg += "\n📌 لإضافة مراقبة اكتب:\n"
+    msg += "رقم الفيلم-يوم-شهر-سنة\n\n"
+    msg += "مثال:\n"
+    msg += "2-22-05-2026"
 
     return msg
 
 
-def update_movies_cache_and_notify_if_changed(send_first_list=False):
+def update_movies_cache_and_notify_if_changed():
     old_cache = get_cached_movies()
     old_movies = old_cache.get("movies", [])
 
@@ -150,12 +132,10 @@ def update_movies_cache_and_notify_if_changed(send_first_list=False):
 
         save_json(MOVIES_CACHE_FILE, cache)
 
-        print(f"Movies cache updated: {len(new_movies)} movies")
-
-        if send_first_list and new_movies:
+        if not old_movies:
             send_msg(format_movies_list(new_movies, cache["last_check_utc"]))
 
-        elif old_movies and (added or removed):
+        elif added or removed:
             msg = "🎬 حصل تغيير في قائمة أفلام Scene Cinemas\n\n"
             msg += f"🕒 آخر تحديث: {cache['last_check_utc']}\n\n"
 
@@ -171,8 +151,10 @@ def update_movies_cache_and_notify_if_changed(send_first_list=False):
                     msg += f"- {title}\n"
                 msg += "\n"
 
-            msg += "📌 ابعت /start لعرض القائمة كاملة.\n"
-            msg += "أو ابعت رقم الفيلم من آخر قائمة."
+            msg += "📌 لإضافة مراقبة اكتب:\n"
+            msg += "رقم الفيلم-يوم-شهر-سنة\n\n"
+            msg += "مثال:\n"
+            msg += "2-22-05-2026"
 
             send_msg(msg)
 
@@ -181,17 +163,13 @@ def update_movies_cache_and_notify_if_changed(send_first_list=False):
     except Exception as e:
         old_cache["last_error"] = str(e)
         old_cache["last_error_utc"] = now_utc()
-
         save_json(MOVIES_CACHE_FILE, old_cache)
-
         print("Movies cache update failed:", e)
-
         return old_cache
 
 
 def get_updates(offset=None):
     data = {"timeout": 0}
-
     if offset:
         data["offset"] = offset
 
@@ -209,8 +187,7 @@ def format_watchlist(watchlist):
         status = "✅ تم التنبيه" if item.get("alerted") else "⏳ منتظر"
         msg += f"{i}. {item['movie']} - {item['date']} - {status}\n"
 
-    msg += "\n🗑 للحذف ابعت:\nحذف 1"
-
+    msg += "\n🗑 للحذف اكتب:\nحذف 1"
     return msg
 
 
@@ -233,115 +210,97 @@ def remove_watch_item(text, watchlist):
 
         return True
 
-    except Exception as e:
-        print("Remove error:", e)
+    except:
         send_msg("❌ اكتب الحذف بهذا الشكل:\nحذف 1")
         return False
 
 
-def select_movie_by_number(text, state):
-    try:
-        movie_num = int(text.strip())
-    except:
+def parse_watch_command(text):
+    parts = text.strip().split("-")
+
+    if len(parts) != 4:
+        return None, None, "❌ الصيغة غلط.\n\nاكتب مثلًا:\n2-22-05-2026"
+
+    movie_num_text, day, month, year = parts
+
+    if not movie_num_text.isdigit():
+        return None, None, "❌ رقم الفيلم لازم يكون رقم."
+
+    if not (day.isdigit() and month.isdigit() and year.isdigit()):
+        return None, None, "❌ التاريخ لازم يكون أرقام فقط."
+
+    if len(day) not in [1, 2] or len(month) not in [1, 2] or len(year) != 4:
+        return None, None, "❌ شكل التاريخ غلط.\n\nاكتب مثلًا:\n2-22-05-2026"
+
+    day = day.zfill(2)
+    month = month.zfill(2)
+
+    date = f"{day}-{month}-{year}"
+    movie_num = int(movie_num_text)
+
+    return movie_num, date, None
+
+
+def add_watch_by_number_and_date(text, watchlist):
+    movie_num, date, error = parse_watch_command(text)
+
+    if error:
+        send_msg(error)
         return False
 
     cache = get_cached_movies()
     movies = cache.get("movies", [])
 
     if not movies:
-        cache = update_movies_cache_and_notify_if_changed(send_first_list=False)
+        cache = update_movies_cache_and_notify_if_changed()
         movies = cache.get("movies", [])
 
     if not movies:
-        send_msg("❌ قائمة الأفلام لم تتحدث بعد. شغّل Workflow مرة أخرى.")
-        return True
+        send_msg("❌ قائمة الأفلام لم تتحدث بعد. جرب بعد أول تشغيل.")
+        return False
 
     index = movie_num - 1
 
     if index < 0 or index >= len(movies):
         send_msg("❌ رقم الفيلم غير صحيح. ابعت /start لعرض القائمة.")
-        return True
+        return False
 
     movie = movies[index]
 
-    state["step"] = "waiting_for_date"
-    state["selected_movie"] = movie
-
-    send_msg(
-        f"✅ تم اختيار الفيلم:\n\n"
-        f"🎞 {movie['title']}\n\n"
-        f"📅 ابعت تاريخ التنبيه المطلوب بهذا الشكل:\n"
-        f"يوم-شهر-سنة\n\n"
-        f"مثال:\n"
-        f"22-05-2026"
-    )
-
-    return True
-
-
-def add_selected_movie_with_date(text, state, watchlist):
-    selected_movie = state.get("selected_movie")
-
-    if not selected_movie:
-        state["step"] = None
-        send_msg("❌ حصل خطأ في اختيار الفيلم. ابعت /start ثم اختار رقم الفيلم.")
-        return True
-
-    date = text.strip()
-
-    if len(date.split("-")) != 3:
-        send_msg(
-            "❌ شكل التاريخ غير صحيح.\n\n"
-            "اكتب التاريخ بهذا الشكل:\n"
-            "22-05-2026"
-        )
-        return False
-
     for item in watchlist:
-        same_movie = item.get("movie", "").lower() == selected_movie["title"].lower()
+        same_movie = item.get("movie", "").lower() == movie["title"].lower()
         same_date = item.get("date", "") == date
         not_alerted = not item.get("alerted")
 
         if same_movie and same_date and not_alerted:
             send_msg(
-                f"ℹ️ الفيلم ده متسجل بالفعل للمراقبة.\n\n"
-                f"🎞 {selected_movie['title']}\n"
-                f"📅 {date}"
+                f"ℹ️ المراقبة دي متسجلة بالفعل.\n\n"
+                f"🎞 الفيلم: {movie['title']}\n"
+                f"📅 التاريخ: {date}"
             )
-
-            state["step"] = None
-            state["selected_movie"] = None
-            return True
+            return False
 
     watchlist.append({
-        "movie": selected_movie["title"],
-        "url": selected_movie["url"],
+        "movie": movie["title"],
+        "url": movie["url"],
         "date": date,
         "alerted": False,
         "created_utc": now_utc()
     })
 
     send_msg(
-        f"✅ تم تسجيل المراقبة بنجاح\n\n"
-        f"🎞 الفيلم: {selected_movie['title']}\n"
+        f"✅ تم بدء مراقبة الفيلم بنجاح\n\n"
+        f"🎞 الفيلم: {movie['title']}\n"
         f"📅 التاريخ: {date}\n\n"
         f"هشيّك عليه تلقائيًا كل ساعتين، وأول ما الحجز يفتح هبعتلك."
     )
 
-    state["step"] = None
-    state["selected_movie"] = None
-
     return True
 
 
-def handle_text_message(text, state, watchlist):
+def handle_text_message(text, watchlist):
     changed = False
     text = text.strip()
-
-    if state.get("step") == "waiting_for_date":
-        if add_selected_movie_with_date(text, state, watchlist):
-            changed = True
-        return changed
 
     if text == "/start":
         cache = get_cached_movies()
@@ -349,26 +308,20 @@ def handle_text_message(text, state, watchlist):
         last_check = cache.get("last_check_utc", "Unknown")
 
         if not movies:
-            cache = update_movies_cache_and_notify_if_changed(send_first_list=False)
+            cache = update_movies_cache_and_notify_if_changed()
             movies = cache.get("movies", [])
             last_check = cache.get("last_check_utc", "Unknown")
 
         if movies:
             send_msg(format_movies_list(movies, last_check))
         else:
-            send_msg(
-                "❌ لم أقدر أجيب قائمة الأفلام حاليًا.\n"
-                "جرب تشغيل الـ Workflow مرة أخرى."
-            )
+            send_msg("❌ لم أقدر أجيب قائمة الأفلام حاليًا.")
 
-    elif text == "/list" or text == "قائمة المراقبة":
+    elif text == "/list":
         send_msg(format_watchlist(watchlist))
 
-    elif text == "/clear" or text == "مسح الكل":
+    elif text == "/clear":
         watchlist.clear()
-        state["step"] = None
-        state["selected_movie"] = None
-
         send_msg("🧹 تم مسح كل قائمة المراقبة.")
         changed = True
 
@@ -376,29 +329,26 @@ def handle_text_message(text, state, watchlist):
         if remove_watch_item(text, watchlist):
             changed = True
 
-    elif text.isdigit():
-        if select_movie_by_number(text, state):
+    elif "-" in text:
+        if add_watch_by_number_and_date(text, watchlist):
             changed = True
 
     else:
         send_msg(
             "❌ مش فاهم الأمر.\n\n"
-            "ابعت /start لعرض قائمة الأفلام.\n"
-            "بعدها ابعت رقم الفيلم فقط.\n\n"
+            "لعرض الأفلام اكتب:\n"
+            "/start\n\n"
+            "لإضافة مراقبة اكتب:\n"
+            "رقم الفيلم-يوم-شهر-سنة\n\n"
             "مثال:\n"
-            "2"
+            "2-22-05-2026"
         )
 
     return changed
 
 
 def handle_bot_updates():
-    state = load_json(STATE_FILE, {
-        "last_update_id": 0,
-        "step": None,
-        "selected_movie": None
-    })
-
+    state = load_json(STATE_FILE, {"last_update_id": 0})
     watchlist = load_json(WATCHLIST_FILE, [])
 
     updates = get_updates(state.get("last_update_id", 0) + 1)
@@ -416,7 +366,7 @@ def handle_bot_updates():
         text = msg.get("text", "").strip()
 
         if chat_id == CHAT_ID and text:
-            if handle_text_message(text, state, watchlist):
+            if handle_text_message(text, watchlist):
                 changed = True
 
     save_json(STATE_FILE, state)
@@ -430,10 +380,7 @@ def check_booking(item):
 
     r = requests.get(
         ajax_url,
-        headers={
-            **HEADERS,
-            "Referer": item["url"]
-        },
+        headers={**HEADERS, "Referer": item["url"]},
         timeout=30
     )
 
@@ -488,7 +435,7 @@ def check_watchlist():
 
 
 def main():
-    update_movies_cache_and_notify_if_changed(send_first_list=False)
+    update_movies_cache_and_notify_if_changed()
 
     handle_bot_updates()
 
