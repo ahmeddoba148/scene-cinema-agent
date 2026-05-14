@@ -40,11 +40,15 @@ def send_msg(text, keyboard=None):
     return tg("sendMessage", data)
 
 
-def answer_callback(callback_id, text=""):
-    return tg("answerCallbackQuery", {
-        "callback_query_id": callback_id,
-        "text": text
-    })
+def main_keyboard():
+    return {
+        "keyboard": [
+            [{"text": "🎬 عرض الأفلام"}],
+            [{"text": "📌 قائمة المراقبة"}],
+            [{"text": "🧹 مسح الكل"}],
+        ],
+        "resize_keyboard": True
+    }
 
 
 def load_json(path, default):
@@ -84,34 +88,6 @@ def commit_changes():
         print("Git error:", e)
 
 
-def main_keyboard():
-    return {
-        "inline_keyboard": [
-            [{"text": "🎬 عرض الأفلام", "callback_data": "movies"}],
-            [{"text": "📌 قائمة المراقبة", "callback_data": "list"}],
-            [{"text": "🧹 مسح الكل", "callback_data": "clear"}],
-        ]
-    }
-
-
-def movies_keyboard(movies):
-    buttons = []
-
-    for i, movie in enumerate(movies, 1):
-        buttons.append([
-            {
-                "text": f"{i}. {movie['title']}",
-                "callback_data": f"movie|{i}"
-            }
-        ])
-
-    buttons.append([{"text": "⬅️ رجوع", "callback_data": "back"}])
-
-    return {
-        "inline_keyboard": buttons
-    }
-
-
 def get_movies():
     r = requests.get(HOME_URL, headers=HEADERS, timeout=30)
     r.raise_for_status()
@@ -133,6 +109,14 @@ def get_movies():
             })
 
     return movies
+
+
+def get_cached_movies():
+    return load_json(MOVIES_CACHE_FILE, {
+        "last_check_utc": "Not checked yet",
+        "count": 0,
+        "movies": []
+    })
 
 
 def update_movies_cache():
@@ -164,14 +148,6 @@ def update_movies_cache():
         return old_cache
 
 
-def get_cached_movies():
-    return load_json(MOVIES_CACHE_FILE, {
-        "last_check_utc": "Not checked yet",
-        "count": 0,
-        "movies": []
-    })
-
-
 def get_updates(offset=None):
     data = {
         "timeout": 0
@@ -185,7 +161,147 @@ def get_updates(offset=None):
     return result.get("result", [])
 
 
-def handle_text_message(text, state, watchlist):
+def show_movies():
+    cache = get_cached_movies()
+    movies = cache.get("movies", [])
+    last_check = cache.get("last_check_utc", "Unknown")
+    last_error = cache.get("last_error")
+
+    if not movies:
+        text = (
+            "❌ لا توجد أفلام محفوظة حتى الآن.\n\n"
+            f"🕒 آخر تحديث: {last_check}\n"
+        )
+
+        if last_error:
+            text += f"\n⚠️ آخر خطأ: {last_error}"
+
+        send_msg(text, main_keyboard())
+        return
+
+    text = (
+        f"🎬 آخر قائمة أفلام\n"
+        f"🕒 آخر تحديث: {last_check}\n"
+        f"🎞 عدد الأفلام: {len(movies)}\n\n"
+    )
+
+    for i, movie in enumerate(movies, 1):
+        text += f"{i}. {movie['title']}\n"
+
+    text += (
+        "\n📌 لإضافة مراقبة اكتب:\n"
+        "رقم الفيلم|التاريخ\n\n"
+        "مثال:\n"
+        "2|22-05-2026"
+    )
+
+    send_msg(text, main_keyboard())
+
+
+def show_watchlist(watchlist):
+    if not watchlist:
+        send_msg(
+            "📭 لا توجد أفلام تحت المراقبة.",
+            main_keyboard()
+        )
+        return
+
+    text = "📌 قائمة المراقبة:\n\n"
+
+    for i, item in enumerate(watchlist, 1):
+        status = "✅ تم التنبيه" if item.get("alerted") else "⏳ منتظر"
+        text += f"{i}. {item['movie']} - {item['date']} - {status}\n"
+
+    text += (
+        "\n🗑 لحذف عنصر اكتب:\n"
+        "حذف رقم\n\n"
+        "مثال:\n"
+        "حذف 1"
+    )
+
+    send_msg(text, main_keyboard())
+
+
+def add_watch_item(text, watchlist):
+    try:
+        movie_index, date = text.split("|")
+        movie_index = int(movie_index.strip()) - 1
+        date = date.strip()
+
+        cache = get_cached_movies()
+        movies = cache.get("movies", [])
+
+        if movie_index < 0 or movie_index >= len(movies):
+            send_msg(
+                "❌ رقم الفيلم غير صحيح.\nاضغط 🎬 عرض الأفلام وشوف الرقم الصحيح.",
+                main_keyboard()
+            )
+            return False
+
+        movie = movies[movie_index]
+
+        watchlist.append({
+            "movie": movie["title"],
+            "url": movie["url"],
+            "date": date,
+            "alerted": False
+        })
+
+        send_msg(
+            f"✅ تمت إضافة المراقبة\n\n"
+            f"🎞 الفيلم: {movie['title']}\n"
+            f"📅 التاريخ: {date}\n\n"
+            f"هتابعه تلقائيًا وأول ما الحجز يفتح هبعتلك.",
+            main_keyboard()
+        )
+
+        return True
+
+    except Exception as e:
+        print("Add watch error:", e)
+
+        send_msg(
+            "❌ الصيغة غلط.\n\n"
+            "اكتب مثلًا:\n"
+            "2|22-05-2026",
+            main_keyboard()
+        )
+
+        return False
+
+
+def remove_watch_item(text, watchlist):
+    try:
+        num = text.replace("حذف", "", 1).strip()
+        index = int(num) - 1
+
+        if index < 0 or index >= len(watchlist):
+            send_msg("❌ رقم غير صحيح.", main_keyboard())
+            return False
+
+        removed = watchlist.pop(index)
+
+        send_msg(
+            f"🗑 تم حذف:\n"
+            f"{removed['movie']} - {removed['date']}",
+            main_keyboard()
+        )
+
+        return True
+
+    except Exception as e:
+        print("Remove error:", e)
+
+        send_msg(
+            "❌ اكتب الحذف بهذا الشكل:\n"
+            "حذف 1",
+            main_keyboard()
+        )
+
+        return False
+
+
+def handle_text_message(text, watchlist):
     changed = False
 
     if text == "/start":
@@ -195,192 +311,13 @@ def handle_text_message(text, state, watchlist):
             main_keyboard()
         )
 
-    elif state.get("waiting_for_date"):
-        date = text.strip()
+    elif text == "🎬 عرض الأفلام":
+        show_movies()
 
-        selected_movie = state.get("selected_movie")
+    elif text == "📌 قائمة المراقبة":
+        show_watchlist(watchlist)
 
-        if not selected_movie:
-            send_msg(
-                "❌ حصل خطأ. اختار الفيلم من جديد.",
-                main_keyboard()
-            )
-
-            state["waiting_for_date"] = False
-            changed = True
-
-            return changed
-
-        watchlist.append({
-            "movie": selected_movie["title"],
-            "url": selected_movie["url"],
-            "date": date,
-            "alerted": False
-        })
-
-        state["waiting_for_date"] = False
-        state["selected_movie"] = None
-
-        send_msg(
-            f"✅ تمت إضافة المراقبة\n\n"
-            f"🎞 الفيلم: {selected_movie['title']}\n"
-            f"📅 التاريخ: {date}\n\n"
-            f"هتابعه تلقائيًا وأول ما الحجز يفتح هبعتلك.",
-            main_keyboard()
-        )
-
-        changed = True
-
-    else:
-        send_msg(
-            "اختار من الأزرار 👇",
-            main_keyboard()
-        )
-
-    return changed
-
-
-def handle_callback(callback, state, watchlist):
-    changed = False
-
-    callback_id = callback["id"]
-    data = callback.get("data", "")
-
-    chat_id = str(
-        callback.get("message", {})
-        .get("chat", {})
-        .get("id", "")
-    )
-
-    if chat_id != CHAT_ID:
-        answer_callback(callback_id, "غير مصرح")
-        return False
-
-    answer_callback(callback_id)
-
-    if data == "back":
-        send_msg(
-            "القائمة الرئيسية:",
-            main_keyboard()
-        )
-
-    elif data == "movies":
-        cache = get_cached_movies()
-        movies = cache.get("movies", [])
-        last_check = cache.get("last_check_utc", "Unknown")
-        last_error = cache.get("last_error")
-
-        if not movies:
-            text = (
-                "❌ لا توجد قائمة أفلام محفوظة حتى الآن.\n\n"
-                f"🕒 آخر تحديث: {last_check}\n"
-            )
-
-            if last_error:
-                text += f"\n⚠️ آخر خطأ: {last_error}"
-
-            send_msg(text, main_keyboard())
-
-        else:
-            text = (
-                f"🎬 آخر قائمة أفلام\n"
-                f"🕒 آخر تحديث: {last_check}\n"
-                f"🎞 عدد الأفلام: {len(movies)}\n\n"
-                f"اختار الفيلم الذي تريد مراقبته:"
-            )
-
-            send_msg(
-                text,
-                movies_keyboard(movies)
-            )
-
-    elif data.startswith("movie|"):
-        try:
-            index = int(data.split("|")[1]) - 1
-
-            cache = get_cached_movies()
-            movies = cache.get("movies", [])
-
-            movie = movies[index]
-
-            state["selected_movie"] = movie
-            state["waiting_for_date"] = True
-
-            send_msg(
-                f"🎞 اخترت: {movie['title']}\n\n"
-                f"ابعت التاريخ المطلوب بهذا الشكل:\n"
-                f"22-05-2026"
-            )
-
-            changed = True
-
-        except Exception as e:
-            print("Movie selection error:", e)
-
-            send_msg(
-                "❌ لم أقدر أحدد الفيلم. جرب تاني.",
-                main_keyboard()
-            )
-
-    elif data == "list":
-        if not watchlist:
-            send_msg(
-                "📭 لا توجد أفلام تحت المراقبة.",
-                main_keyboard()
-            )
-
-        else:
-            text = "📌 قائمة المراقبة:\n\n"
-            buttons = []
-
-            for i, item in enumerate(watchlist, 1):
-                status = "✅ تم التنبيه" if item.get("alerted") else "⏳ منتظر"
-
-                text += f"{i}. {item['movie']} - {item['date']} - {status}\n"
-
-                buttons.append([
-                    {
-                        "text": f"🗑 حذف {i}",
-                        "callback_data": f"remove|{i}"
-                    }
-                ])
-
-            buttons.append([
-                {
-                    "text": "⬅️ رجوع",
-                    "callback_data": "back"
-                }
-            ])
-
-            send_msg(
-                text,
-                {
-                    "inline_keyboard": buttons
-                }
-            )
-
-    elif data.startswith("remove|"):
-        try:
-            index = int(data.split("|")[1]) - 1
-            removed = watchlist.pop(index)
-
-            send_msg(
-                f"🗑 تم حذف:\n"
-                f"{removed['movie']} - {removed['date']}",
-                main_keyboard()
-            )
-
-            changed = True
-
-        except Exception as e:
-            print("Remove error:", e)
-
-            send_msg(
-                "❌ لم أقدر أحذف العنصر.",
-                main_keyboard()
-            )
-
-    elif data == "clear":
+    elif text == "🧹 مسح الكل":
         watchlist.clear()
 
         send_msg(
@@ -390,14 +327,28 @@ def handle_callback(callback, state, watchlist):
 
         changed = True
 
+    elif "|" in text:
+        if add_watch_item(text, watchlist):
+            changed = True
+
+    elif text.startswith("حذف"):
+        if remove_watch_item(text, watchlist):
+            changed = True
+
+    else:
+        send_msg(
+            "اختار من الأزرار 👇\n\n"
+            "أو اكتب مثلًا:\n"
+            "2|22-05-2026",
+            main_keyboard()
+        )
+
     return changed
 
 
 def handle_bot_updates():
     state = load_json(STATE_FILE, {
-        "last_update_id": 0,
-        "waiting_for_date": False,
-        "selected_movie": None
+        "last_update_id": 0
     })
 
     watchlist = load_json(WATCHLIST_FILE, [])
@@ -411,24 +362,20 @@ def handle_bot_updates():
     for update in updates:
         state["last_update_id"] = update["update_id"]
 
-        if "message" in update:
-            msg = update["message"]
+        msg = update.get("message")
 
-            chat_id = str(
-                msg.get("chat", {})
-                .get("id", "")
-            )
+        if not msg:
+            continue
 
-            text = msg.get("text", "").strip()
+        chat_id = str(
+            msg.get("chat", {})
+            .get("id", "")
+        )
 
-            if chat_id == CHAT_ID and text:
-                if handle_text_message(text, state, watchlist):
-                    changed = True
+        text = msg.get("text", "").strip()
 
-        elif "callback_query" in update:
-            callback = update["callback_query"]
-
-            if handle_callback(callback, state, watchlist):
+        if chat_id == CHAT_ID and text:
+            if handle_text_message(text, watchlist):
                 changed = True
 
     save_json(STATE_FILE, state)
