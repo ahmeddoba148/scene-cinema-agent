@@ -1,16 +1,20 @@
-
+name: Scene Cinema Checker
 
 on:
+
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "0 */2 * * *"
 
   workflow_dispatch:
 
 jobs:
+
   check-booking:
+
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout
         uses: actions/checkout@v4
 
