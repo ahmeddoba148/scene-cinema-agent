@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-05-19 14:42:35 UTC",
+  "last_check_utc": "2026-05-19 17:59:13 UTC",
   "count": 13,
   "movies": [
     {
@@ -31,12 +31,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/deep-water.html"
     },
     {
-      "title": "Bershama",
-      "url": "https://district5.scenecinemas.com/movie-details/bershama-arabic.html"
-    },
-    {
       "title": "Mortal Kombat II",
       "url": "https://district5.scenecinemas.com/movie-details/mortal-kombat-2.html"
+    },
+    {
+      "title": "Bershama",
+      "url": "https://district5.scenecinemas.com/movie-details/bershama-arabic.html"
     },
     {
       "title": "Top Gun 40th Anniversary",
