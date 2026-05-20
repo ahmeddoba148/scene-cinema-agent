@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-05-20 21:45:26 UTC",
-  "count": 13,
+  "last_check_utc": "2026-05-20 23:06:30 UTC",
+  "count": 11,
   "movies": [
     {
       "title": "Asad",
@@ -27,32 +27,24 @@
       "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
     },
     {
-      "title": "Bershama",
-      "url": "https://district5.scenecinemas.com/movie-details/bershama-arabic.html"
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
     },
     {
-      "title": "Deep Water",
-      "url": "https://district5.scenecinemas.com/movie-details/deep-water.html"
+      "title": "Passenger",
+      "url": "https://district5.scenecinemas.com/movie-details/passenger.html"
     },
     {
       "title": "In the Grey",
       "url": "https://district5.scenecinemas.com/movie-details/in_the_grey.html"
     },
     {
-      "title": "Top Gun 40th Anniversary",
-      "url": "https://district5.scenecinemas.com/movie-details/top-gun-40th-anniversary.html"
-    },
-    {
-      "title": "Billie Eilish - Hit Me Hard and Soft: The Tour Live",
-      "url": "https://district5.scenecinemas.com/movie-details/billie-eilish-hit-me-hard-and-soft-the-tour-live-2026.html"
-    },
-    {
       "title": "Mortal Kombat II",
       "url": "https://district5.scenecinemas.com/movie-details/mortal-kombat-2.html"
     },
     {
-      "title": "Lee Cronins The Mummy",
-      "url": "https://district5.scenecinemas.com/movie-details/lee_cronins_the_mummy.html"
+      "title": "Deep Water",
+      "url": "https://district5.scenecinemas.com/movie-details/deep-water.html"
     }
   ]
 }
