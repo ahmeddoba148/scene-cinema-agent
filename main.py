@@ -96,12 +96,15 @@ def movie_titles_set(movies):
 
 
 def format_movies_list(movies, last_check):
-    msg = "🎬 آخر قائمة أفلام\n"
+    msg = "🎬 قائمة الأفلام الحالية بعد التحديث\n"
     msg += f"🕒 آخر تحديث: {last_check}\n"
     msg += f"🎞 عدد الأفلام: {len(movies)}\n\n"
 
-    for i, movie in enumerate(movies, 1):
-        msg += f"{i}. {movie['title']}\n"
+    if not movies:
+        msg += "📭 لا توجد أفلام حاليًا.\n"
+    else:
+        for i, movie in enumerate(movies, 1):
+            msg += f"{i}. {movie['title']}\n"
 
     msg += "\n📌 لإضافة مراقبة اكتب:\n"
     msg += "رقم الفيلم-يوم-شهر-سنة\n\n"
@@ -109,6 +112,25 @@ def format_movies_list(movies, last_check):
     msg += "2-22-05-2026"
 
     return msg
+
+
+def format_movies_change_message(added, removed, last_check):
+    msg = "🎬 حصل تغيير في قائمة أفلام Scene Cinemas\n\n"
+    msg += f"🕒 آخر تحديث: {last_check}\n\n"
+
+    if added:
+        msg += "✅ أفلام اتضافت:\n"
+        for title in sorted(added):
+            msg += f"- {title}\n"
+        msg += "\n"
+
+    if removed:
+        msg += "❌ أفلام اتشالت:\n"
+        for title in sorted(removed):
+            msg += f"- {title}\n"
+        msg += "\n"
+
+    return msg.strip()
 
 
 def update_movies_cache_and_notify_if_changed():
@@ -132,31 +154,16 @@ def update_movies_cache_and_notify_if_changed():
 
         save_json(MOVIES_CACHE_FILE, cache)
 
+        # أول تشغيل: ابعت القائمة كاملة فقط
         if not old_movies:
             send_msg(format_movies_list(new_movies, cache["last_check_utc"]))
 
+        # عند أي إضافة أو حذف: ابعت رسالتين وراء بعض
+        # 1) رسالة التغيير
+        # 2) القائمة الحالية كاملة بعد التعديل
         elif added or removed:
-            msg = "🎬 حصل تغيير في قائمة أفلام Scene Cinemas\n\n"
-            msg += f"🕒 آخر تحديث: {cache['last_check_utc']}\n\n"
-
-            if added:
-                msg += "✅ أفلام اتضافت:\n"
-                for title in sorted(added):
-                    msg += f"- {title}\n"
-                msg += "\n"
-
-            if removed:
-                msg += "❌ أفلام اتشالت:\n"
-                for title in sorted(removed):
-                    msg += f"- {title}\n"
-                msg += "\n"
-
-            msg += "📌 لإضافة مراقبة اكتب:\n"
-            msg += "رقم الفيلم-يوم-شهر-سنة\n\n"
-            msg += "مثال:\n"
-            msg += "2-22-05-2026"
-
-            send_msg(msg)
+            send_msg(format_movies_change_message(added, removed, cache["last_check_utc"]))
+            send_msg(format_movies_list(new_movies, cache["last_check_utc"]))
 
         return cache
 
