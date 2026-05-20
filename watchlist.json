@@ -13,5 +13,12 @@
     "alerted": true,
     "created_utc": "2026-05-15 13:47:48 UTC",
     "alerted_utc": "2026-05-15 13:47:50 UTC"
+  },
+  {
+    "movie": "7 Dogs",
+    "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html",
+    "date": "05-06-2026",
+    "alerted": false,
+    "created_utc": "2026-05-20 23:53:59 UTC"
   }
 ]
