@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-05-21 07:43:01 UTC",
-  "count": 11,
+  "last_check_utc": "2026-05-21 11:00:25 UTC",
+  "count": 12,
   "movies": [
     {
       "title": "Asad",
@@ -29,6 +29,10 @@
     {
       "title": "Star Wars: The Mandalorian and Grogu",
       "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
+    },
+    {
+      "title": "Obsession",
+      "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
       "title": "Passenger",
