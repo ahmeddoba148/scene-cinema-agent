@@ -29,11 +29,23 @@ def tg(method, data=None):
     ).json()
 
 
+def main_keyboard():
+    return {
+        "keyboard": [
+            [{"text": "📌 الأفلام المراقبة"}],
+            [{"text": "/start"}, {"text": "/list"}]
+        ],
+        "resize_keyboard": True,
+        "one_time_keyboard": False
+    }
+
+
 def send_msg(text):
     return tg("sendMessage", {
         "chat_id": CHAT_ID,
         "text": text,
-        "disable_web_page_preview": True
+        "disable_web_page_preview": True,
+        "reply_markup": main_keyboard()
     })
 
 
@@ -324,7 +336,7 @@ def handle_text_message(text, watchlist):
         else:
             send_msg("❌ لم أقدر أجيب قائمة الأفلام حاليًا.")
 
-    elif text == "/list":
+    elif text in ["/list", "📌 الأفلام المراقبة"]:
         send_msg(format_watchlist(watchlist))
 
     elif text == "/clear":
