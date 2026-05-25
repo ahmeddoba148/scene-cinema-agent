@@ -32,7 +32,8 @@ def tg(method, data=None):
 def main_keyboard():
     return {
         "keyboard": [
-            [{"text": "📌 الأفلام المراقبة"}],
+            [{"text": "🎬 قائمة الأفلام"}],
+            [{"text": "📌 الأفلام المراقبة"}]
         ],
         "resize_keyboard": True,
         "one_time_keyboard": False
@@ -165,13 +166,9 @@ def update_movies_cache_and_notify_if_changed():
 
         save_json(MOVIES_CACHE_FILE, cache)
 
-        # أول تشغيل: ابعت القائمة كاملة فقط
         if not old_movies:
             send_msg(format_movies_list(new_movies, cache["last_check_utc"]))
 
-        # عند أي إضافة أو حذف: ابعت رسالتين وراء بعض
-        # 1) رسالة التغيير
-        # 2) القائمة الحالية كاملة بعد التعديل
         elif added or removed:
             send_msg(format_movies_change_message(added, removed, cache["last_check_utc"]))
             send_msg(format_movies_list(new_movies, cache["last_check_utc"]))
@@ -337,6 +334,21 @@ def handle_text_message(text, watchlist):
 
     elif text in ["/list", "📌 الأفلام المراقبة"]:
         send_msg(format_watchlist(watchlist))
+
+    elif text in ["/movies", "🎬 قائمة الأفلام"]:
+        cache = get_cached_movies()
+        movies = cache.get("movies", [])
+        last_check = cache.get("last_check_utc", "Unknown")
+
+        if not movies:
+            cache = update_movies_cache_and_notify_if_changed()
+            movies = cache.get("movies", [])
+            last_check = cache.get("last_check_utc", "Unknown")
+
+        if movies:
+            send_msg(format_movies_list(movies, last_check))
+        else:
+            send_msg("❌ لم أقدر أجيب قائمة الأفلام حاليًا.")
 
     elif text == "/clear":
         watchlist.clear()
