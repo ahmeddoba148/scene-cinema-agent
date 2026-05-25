@@ -1,7 +1,11 @@
 {
-  "last_check_utc": "2026-05-25 12:56:53 UTC",
+  "last_check_utc": "2026-05-25 16:16:22 UTC",
   "count": 12,
   "movies": [
+    {
+      "title": "7 Dogs",
+      "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
+    },
     {
       "title": "Asad",
       "url": "https://district5.scenecinemas.com/movie-details/asad.html"
@@ -11,16 +15,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/el-kalam-ala-eh.html"
     },
     {
-      "title": "Michael",
-      "url": "https://district5.scenecinemas.com/movie-details/michael.html"
-    },
-    {
-      "title": "7 Dogs",
-      "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
-    },
-    {
       "title": "Ezma",
       "url": "https://district5.scenecinemas.com/movie-details/ezma.html"
+    },
+    {
+      "title": "Michael",
+      "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     },
     {
       "title": "Obsession",
