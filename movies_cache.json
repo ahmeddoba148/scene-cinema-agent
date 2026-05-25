@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-05-25 23:01:53 UTC",
+  "last_check_utc": "2026-05-25 23:04:37 UTC",
   "count": 12,
   "movies": [
     {
@@ -23,16 +23,8 @@
       "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     },
     {
-      "title": "Obsession",
-      "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
-    },
-    {
       "title": "The Devil Wears Prada 2",
       "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
-    },
-    {
-      "title": "In the Grey",
-      "url": "https://district5.scenecinemas.com/movie-details/in_the_grey.html"
     },
     {
       "title": "Star Wars: The Mandalorian and Grogu",
@@ -43,12 +35,20 @@
       "url": "https://district5.scenecinemas.com/movie-details/passenger.html"
     },
     {
-      "title": "Deep Water",
-      "url": "https://district5.scenecinemas.com/movie-details/deep-water.html"
+      "title": "In the Grey",
+      "url": "https://district5.scenecinemas.com/movie-details/in_the_grey.html"
+    },
+    {
+      "title": "Obsession",
+      "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
       "title": "Mortal Kombat II",
       "url": "https://district5.scenecinemas.com/movie-details/mortal-kombat-2.html"
+    },
+    {
+      "title": "Deep Water",
+      "url": "https://district5.scenecinemas.com/movie-details/deep-water.html"
     }
   ]
 }
