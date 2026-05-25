@@ -33,7 +33,6 @@ def main_keyboard():
     return {
         "keyboard": [
             [{"text": "📌 الأفلام المراقبة"}],
-            [{"text": "/start"}, {"text": "/list"}]
         ],
         "resize_keyboard": True,
         "one_time_keyboard": False
