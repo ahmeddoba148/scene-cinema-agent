@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-05-26 14:51:01 UTC",
+  "last_check_utc": "2026-05-26 18:19:20 UTC",
   "count": 12,
   "movies": [
     {
@@ -27,10 +27,6 @@
       "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
     },
     {
-      "title": "Star Wars: The Mandalorian and Grogu",
-      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
-    },
-    {
       "title": "Obsession",
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
@@ -41,6 +37,10 @@
     {
       "title": "In the Grey",
       "url": "https://district5.scenecinemas.com/movie-details/in_the_grey.html"
+    },
+    {
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
     },
     {
       "title": "Mortal Kombat II",
