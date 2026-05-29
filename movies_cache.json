@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-05-28 23:08:45 UTC",
-  "count": 9,
+  "last_check_utc": "2026-05-29 02:33:14 UTC",
+  "count": 8,
   "movies": [
     {
       "title": "7 Dogs",
@@ -23,20 +23,16 @@
       "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     },
     {
-      "title": "Star Wars: The Mandalorian and Grogu",
-      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
-    },
-    {
       "title": "Obsession",
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
-      "title": "Passenger",
-      "url": "https://district5.scenecinemas.com/movie-details/passenger.html"
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
     },
     {
-      "title": "The Devil Wears Prada 2",
-      "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
+      "title": "Passenger",
+      "url": "https://district5.scenecinemas.com/movie-details/passenger.html"
     }
   ]
 }
