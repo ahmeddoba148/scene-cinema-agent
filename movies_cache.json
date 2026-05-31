@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-05-31 15:14:00 UTC",
-  "count": 8,
+  "last_check_utc": "2026-05-31 16:59:00 UTC",
+  "count": 9,
   "movies": [
     {
       "title": "7 Dogs",
@@ -33,6 +33,10 @@
     {
       "title": "Passenger",
       "url": "https://district5.scenecinemas.com/movie-details/passenger.html"
+    },
+    {
+      "title": "The Devil Wears Prada 2",
+      "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
     }
   ]
 }
