@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-06-04 08:13:36 UTC",
+  "last_check_utc": "2026-06-04 12:39:05 UTC",
   "count": 9,
   "movies": [
     {
@@ -27,12 +27,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
-      "title": "Masters of the Universe",
-      "url": "https://district5.scenecinemas.com/movie-details/masters-of-the-universe.html"
-    },
-    {
       "title": "The Devil Wears Prada 2",
       "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
+    },
+    {
+      "title": "Masters of the Universe",
+      "url": "https://district5.scenecinemas.com/movie-details/masters-of-the-universe.html"
     },
     {
       "title": "Star Wars: The Mandalorian and Grogu",
