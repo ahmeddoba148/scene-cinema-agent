@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-06-04 23:02:55 UTC",
+  "last_check_utc": "2026-06-05 02:41:18 UTC",
   "count": 9,
   "movies": [
     {
@@ -23,10 +23,6 @@
       "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     },
     {
-      "title": "Star Wars: The Mandalorian and Grogu",
-      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
-    },
-    {
       "title": "Obsession",
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
@@ -37,6 +33,10 @@
     {
       "title": "The Devil Wears Prada 2",
       "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
+    },
+    {
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
     }
   ]
 }
