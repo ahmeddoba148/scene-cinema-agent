@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-06-06 22:56:52 UTC",
-  "count": 10,
+  "last_check_utc": "2026-06-07 02:47:23 UTC",
+  "count": 9,
   "movies": [
     {
       "title": "7 Dogs",
@@ -23,10 +23,6 @@
       "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     },
     {
-      "title": "Star Wars: The Mandalorian and Grogu",
-      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
-    },
-    {
       "title": "Obsession",
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
@@ -39,8 +35,8 @@
       "url": "https://district5.scenecinemas.com/movie-details/masters-of-the-universe.html"
     },
     {
-      "title": "Passenger",
-      "url": "https://district5.scenecinemas.com/movie-details/passenger.html"
+      "title": "Star Wars: The Mandalorian and Grogu",
+      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
     }
   ]
 }
