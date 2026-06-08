@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-06-08 18:20:17 UTC",
-  "count": 9,
+  "last_check_utc": "2026-06-08 21:45:32 UTC",
+  "count": 10,
   "movies": [
     {
       "title": "7 Dogs",
@@ -37,6 +37,10 @@
     {
       "title": "Star Wars: The Mandalorian and Grogu",
       "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
+    },
+    {
+      "title": "Passenger",
+      "url": "https://district5.scenecinemas.com/movie-details/passenger.html"
     }
   ]
 }
