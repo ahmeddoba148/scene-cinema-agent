@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-06-10 23:19:58 UTC",
-  "count": 11,
+  "last_check_utc": "2026-06-11 02:50:56 UTC",
+  "count": 10,
   "movies": [
     {
       "title": "7 Dogs",
@@ -23,28 +23,24 @@
       "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     },
     {
-      "title": "Obsession",
-      "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
+      "title": "The Crush",
+      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
     },
     {
-      "title": "The Devil Wears Prada 2",
-      "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
+      "title": "Obsession",
+      "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
       "title": "Disclosure Day",
       "url": "https://district5.scenecinemas.com/movie-details/disclosure-day.html"
     },
     {
-      "title": "Star Wars: The Mandalorian and Grogu",
-      "url": "https://district5.scenecinemas.com/movie-details/star-wars-the-mandalorian-and-grogu.html"
+      "title": "The Devil Wears Prada 2",
+      "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
     },
     {
-      "title": "Masters of the Universe",
-      "url": "https://district5.scenecinemas.com/movie-details/masters-of-the-universe.html"
-    },
-    {
-      "title": "Passenger",
-      "url": "https://district5.scenecinemas.com/movie-details/passenger.html"
+      "title": "The Ritual Room",
+      "url": "https://district5.scenecinemas.com/movie-details/the-ritual-room.html"
     }
   ]
 }
