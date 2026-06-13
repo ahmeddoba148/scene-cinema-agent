@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-06-13 13:42:47 UTC",
-  "count": 10,
+  "last_check_utc": "2026-06-13 15:27:13 UTC",
+  "count": 9,
   "movies": [
     {
       "title": "7 Dogs",
@@ -23,12 +23,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     },
     {
-      "title": "The Crush",
-      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
-    },
-    {
       "title": "Obsession",
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
+    },
+    {
+      "title": "The Crush",
+      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
     },
     {
       "title": "Disclosure Day",
@@ -37,10 +37,6 @@
     {
       "title": "The Devil Wears Prada 2",
       "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
-    },
-    {
-      "title": "The Ritual Room",
-      "url": "https://district5.scenecinemas.com/movie-details/the-ritual-room.html"
     }
   ]
 }
