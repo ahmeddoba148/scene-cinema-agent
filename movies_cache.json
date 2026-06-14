@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-06-13 22:56:30 UTC",
+  "last_check_utc": "2026-06-14 02:51:59 UTC",
   "count": 10,
   "movies": [
     {
@@ -23,12 +23,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     },
     {
-      "title": "Obsession",
-      "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
-    },
-    {
       "title": "The Crush",
       "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
+    },
+    {
+      "title": "Obsession",
+      "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
       "title": "Disclosure Day",
