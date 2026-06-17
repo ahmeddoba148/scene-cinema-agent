@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-06-17 20:03:13 UTC",
+  "last_check_utc": "2026-06-17 23:17:51 UTC",
   "count": 11,
   "movies": [
     {
@@ -7,7 +7,7 @@
       "url": "https://district5.scenecinemas.com/movie-details/the-stories-arabic.html"
     },
     {
-      "title": "Toy Story 5 3D",
+      "title": "Toy Story 5",
       "url": "https://district5.scenecinemas.com/movie-details/toy-story-5.html"
     },
     {
@@ -23,16 +23,20 @@
       "url": "https://district5.scenecinemas.com/movie-details/el-kalam-ala-eh.html"
     },
     {
-      "title": "The Crush",
-      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
-    },
-    {
       "title": "Obsession",
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
+      "title": "The Crush",
+      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
+    },
+    {
       "title": "Asad",
       "url": "https://district5.scenecinemas.com/movie-details/asad.html"
+    },
+    {
+      "title": "The Devil Wears Prada 2",
+      "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
     },
     {
       "title": "Michael",
@@ -41,10 +45,6 @@
     {
       "title": "Disclosure Day",
       "url": "https://district5.scenecinemas.com/movie-details/disclosure-day.html"
-    },
-    {
-      "title": "The Devil Wears Prada 2",
-      "url": "https://district5.scenecinemas.com/movie-details/the-devil-wears-prada-2.html"
     }
   ]
 }
