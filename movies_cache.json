@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-06-18 23:29:14 UTC",
-  "count": 11,
+  "last_check_utc": "2026-06-19 03:35:04 UTC",
+  "count": 12,
   "movies": [
     {
       "title": "The Stories",
@@ -13,6 +13,10 @@
     {
       "title": "7 Dogs",
       "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
+    },
+    {
+      "title": "Sakr w Canaria",
+      "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
     },
     {
       "title": "Ezma",
