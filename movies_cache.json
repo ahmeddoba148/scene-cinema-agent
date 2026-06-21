@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-06-21 15:46:20 UTC",
+  "last_check_utc": "2026-06-21 17:20:53 UTC",
   "count": 12,
   "movies": [
     {
@@ -7,20 +7,20 @@
       "url": "https://district5.scenecinemas.com/movie-details/the-stories-arabic.html"
     },
     {
-      "title": "Toy Story 5",
-      "url": "https://district5.scenecinemas.com/movie-details/toy-story-5.html"
-    },
-    {
-      "title": "7 Dogs",
-      "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
-    },
-    {
       "title": "Sakr w Canaria",
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
     },
     {
+      "title": "Toy Story 5",
+      "url": "https://district5.scenecinemas.com/movie-details/toy-story-5.html"
+    },
+    {
       "title": "Ezma",
       "url": "https://district5.scenecinemas.com/movie-details/ezma.html"
+    },
+    {
+      "title": "7 Dogs",
+      "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
     },
     {
       "title": "El Kalam Ala Eh",
