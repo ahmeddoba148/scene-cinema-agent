@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-06-23 23:01:32 UTC",
+  "last_check_utc": "2026-06-24 02:33:48 UTC",
   "count": 12,
   "movies": [
     {
@@ -31,20 +31,20 @@
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
-      "title": "The Crush",
-      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
-    },
-    {
       "title": "The Death of Robinhood",
       "url": "https://district5.scenecinemas.com/movie-details/the-death-of-robinhood.html"
     },
     {
-      "title": "Michael",
-      "url": "https://district5.scenecinemas.com/movie-details/michael.html"
+      "title": "The Crush",
+      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
     },
     {
       "title": "Asad",
       "url": "https://district5.scenecinemas.com/movie-details/asad.html"
+    },
+    {
+      "title": "Michael",
+      "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     },
     {
       "title": "Disclosure Day",
