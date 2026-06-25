@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-06-25 07:36:14 UTC",
-  "count": 11,
+  "last_check_utc": "2026-06-25 10:36:03 UTC",
+  "count": 12,
   "movies": [
     {
       "title": "The Stories",
@@ -33,6 +33,10 @@
     {
       "title": "Supergirl",
       "url": "https://district5.scenecinemas.com/movie-details/supergirl.html"
+    },
+    {
+      "title": "Toy Story 5 2D",
+      "url": "https://district5.scenecinemas.com/movie-details/toy-story-5-2d.html"
     },
     {
       "title": "The Crush",
