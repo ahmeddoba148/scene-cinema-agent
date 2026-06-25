@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-06-24 22:59:44 UTC",
-  "count": 12,
+  "last_check_utc": "2026-06-25 02:35:04 UTC",
+  "count": 11,
   "movies": [
     {
       "title": "The Stories",
@@ -31,8 +31,8 @@
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
-      "title": "The Death of Robinhood",
-      "url": "https://district5.scenecinemas.com/movie-details/the-death-of-robinhood.html"
+      "title": "Supergirl",
+      "url": "https://district5.scenecinemas.com/movie-details/supergirl.html"
     },
     {
       "title": "The Crush",
@@ -45,10 +45,6 @@
     {
       "title": "Michael",
       "url": "https://district5.scenecinemas.com/movie-details/michael.html"
-    },
-    {
-      "title": "Disclosure Day",
-      "url": "https://district5.scenecinemas.com/movie-details/disclosure-day.html"
     }
   ]
 }
