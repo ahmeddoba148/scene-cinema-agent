@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-06-26 10:44:58 UTC",
+  "last_check_utc": "2026-06-26 14:07:36 UTC",
   "count": 12,
   "movies": [
     {
@@ -39,12 +39,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/toy-story-5-2d.html"
     },
     {
-      "title": "The Crush",
-      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
-    },
-    {
       "title": "Asad",
       "url": "https://district5.scenecinemas.com/movie-details/asad.html"
+    },
+    {
+      "title": "The Crush",
+      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
     },
     {
       "title": "Michael",
