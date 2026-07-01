@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-06-30 23:03:54 UTC",
-  "count": 12,
+  "last_check_utc": "2026-07-01 02:44:31 UTC",
+  "count": 11,
   "movies": [
     {
       "title": "The Stories",
@@ -31,6 +31,10 @@
       "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
+      "title": "Minions & Monsters (2D)",
+      "url": "https://district5.scenecinemas.com/movie-details/minions-monsters-2d-english.html"
+    },
+    {
       "title": "Supergirl",
       "url": "https://district5.scenecinemas.com/movie-details/supergirl.html"
     },
@@ -39,16 +43,8 @@
       "url": "https://district5.scenecinemas.com/movie-details/toy-story-5-2d.html"
     },
     {
-      "title": "The Crush",
-      "url": "https://district5.scenecinemas.com/movie-details/the-crush-arabic.html"
-    },
-    {
       "title": "Asad",
       "url": "https://district5.scenecinemas.com/movie-details/asad.html"
-    },
-    {
-      "title": "Michael",
-      "url": "https://district5.scenecinemas.com/movie-details/michael.html"
     }
   ]
 }
