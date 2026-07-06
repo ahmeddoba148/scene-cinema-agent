@@ -1,14 +1,10 @@
 {
-  "last_check_utc": "2026-07-05 22:54:43 UTC",
+  "last_check_utc": "2026-07-06 02:27:35 UTC",
   "count": 11,
   "movies": [
     {
-      "title": "The Stories",
-      "url": "https://district5.scenecinemas.com/movie-details/the-stories-arabic.html"
-    },
-    {
-      "title": "Sakr w Canaria",
-      "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
+      "title": "Shamshon w Delilah",
+      "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html"
     },
     {
       "title": "Toy Story 5",
@@ -19,28 +15,32 @@
       "url": "https://district5.scenecinemas.com/movie-details/ezma.html"
     },
     {
-      "title": "7 Dogs",
-      "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
+      "title": "Sakr w Canaria",
+      "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
     },
     {
-      "title": "El Kalam Ala Eh",
-      "url": "https://district5.scenecinemas.com/movie-details/el-kalam-ala-eh.html"
+      "title": "The Stories",
+      "url": "https://district5.scenecinemas.com/movie-details/the-stories-arabic.html"
     },
     {
       "title": "Black Box",
       "url": "https://district5.scenecinemas.com/movie-details/black-box.html"
     },
     {
+      "title": "7 Dogs",
+      "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
+    },
+    {
       "title": "Minions & Monsters (3D)",
       "url": "https://district5.scenecinemas.com/movie-details/minions-monsters-3d-english.html"
     },
     {
-      "title": "Obsession",
-      "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
-    },
-    {
       "title": "Supergirl",
       "url": "https://district5.scenecinemas.com/movie-details/supergirl.html"
+    },
+    {
+      "title": "Obsession",
+      "url": "https://district5.scenecinemas.com/movie-details/obsession.html"
     },
     {
       "title": "Toy Story 5 2D",
