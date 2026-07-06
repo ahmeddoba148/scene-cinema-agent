@@ -6,5 +6,12 @@
     "alerted": true,
     "created_utc": "2026-05-20 23:53:59 UTC",
     "alerted_utc": "2026-06-02 22:17:54 UTC"
+  },
+  {
+    "movie": "Shamshon w Delilah",
+    "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html",
+    "date": "10-07-2026",
+    "alerted": false,
+    "created_utc": "2026-07-06 08:13:00 UTC"
   }
 ]
