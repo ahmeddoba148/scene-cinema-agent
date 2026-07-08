@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-07-07 22:53:13 UTC",
-  "count": 11,
+  "last_check_utc": "2026-07-08 01:56:31 UTC",
+  "count": 10,
   "movies": [
     {
       "title": "Shamshon w Delilah",
@@ -27,20 +27,16 @@
       "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
     },
     {
-      "title": "Black Box",
-      "url": "https://district5.scenecinemas.com/movie-details/black-box.html"
-    },
-    {
-      "title": "Minions & Monsters (3D)",
-      "url": "https://district5.scenecinemas.com/movie-details/minions-monsters-3d-english.html"
-    },
-    {
-      "title": "Supergirl",
-      "url": "https://district5.scenecinemas.com/movie-details/supergirl.html"
+      "title": "Eben Meen Fehom",
+      "url": "https://district5.scenecinemas.com/movie-details/eben-meen-fehom-arabic.html"
     },
     {
       "title": "Toy Story 5 2D",
       "url": "https://district5.scenecinemas.com/movie-details/toy-story-5-2d.html"
+    },
+    {
+      "title": "Minions & Monsters (3D)",
+      "url": "https://district5.scenecinemas.com/movie-details/minions-monsters-3d-english.html"
     },
     {
       "title": "Obsession",
