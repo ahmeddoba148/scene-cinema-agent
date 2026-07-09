@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-07-09 17:48:42 UTC",
+  "last_check_utc": "2026-07-09 19:25:42 UTC",
   "count": 12,
   "movies": [
     {
@@ -23,12 +23,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/the-stories-arabic.html"
     },
     {
-      "title": "Eben Meen Fehom",
-      "url": "https://district5.scenecinemas.com/movie-details/eben-meen-fehom-arabic.html"
-    },
-    {
       "title": "7 Dogs",
       "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
+    },
+    {
+      "title": "Eben Meen Fehom",
+      "url": "https://district5.scenecinemas.com/movie-details/eben-meen-fehom-arabic.html"
     },
     {
       "title": "Moana (2D)",
