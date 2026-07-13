@@ -1,7 +1,11 @@
 {
-  "last_check_utc": "2026-07-13 19:14:52 UTC",
+  "last_check_utc": "2026-07-13 20:51:41 UTC",
   "count": 12,
   "movies": [
+    {
+      "title": "The Odyssey",
+      "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
+    },
     {
       "title": "Shamshon w Delilah",
       "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html"
@@ -17,10 +21,6 @@
     {
       "title": "Sakr w Canaria",
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
-    },
-    {
-      "title": "The Stories",
-      "url": "https://district5.scenecinemas.com/movie-details/the-stories-arabic.html"
     },
     {
       "title": "7 Dogs",
