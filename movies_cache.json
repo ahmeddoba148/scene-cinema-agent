@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-07-23 06:24:24 UTC",
+  "last_check_utc": "2026-07-23 10:13:00 UTC",
   "count": 10,
   "movies": [
     {
@@ -27,12 +27,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/toy-story-5.html"
     },
     {
-      "title": "7 Dogs",
-      "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
-    },
-    {
       "title": "Evil Dead Burn",
       "url": "https://district5.scenecinemas.com/movie-details/evil-dead-burn.html"
+    },
+    {
+      "title": "7 Dogs",
+      "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
     },
     {
       "title": "Minions & Monsters (2D)",
