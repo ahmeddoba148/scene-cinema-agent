@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-07-22 22:54:34 UTC",
-  "count": 11,
+  "last_check_utc": "2026-07-23 02:01:47 UTC",
+  "count": 10,
   "movies": [
     {
       "title": "The Odyssey",
@@ -19,8 +19,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
     },
     {
-      "title": "Toy Story 5 2D",
-      "url": "https://district5.scenecinemas.com/movie-details/toy-story-5-2d.html"
+      "title": "Moana (2D)",
+      "url": "https://district5.scenecinemas.com/movie-details/moana-english-2d-2026.html"
+    },
+    {
+      "title": "Toy Story 5",
+      "url": "https://district5.scenecinemas.com/movie-details/toy-story-5.html"
     },
     {
       "title": "7 Dogs",
@@ -31,20 +35,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/evil-dead-burn.html"
     },
     {
-      "title": "Moana (2D)",
-      "url": "https://district5.scenecinemas.com/movie-details/moana-english-2d-2026.html"
+      "title": "Minions & Monsters (2D)",
+      "url": "https://district5.scenecinemas.com/movie-details/minions-monsters-2d-english.html"
     },
     {
       "title": "Ezma",
       "url": "https://district5.scenecinemas.com/movie-details/ezma.html"
-    },
-    {
-      "title": "Eben Meen Fehom",
-      "url": "https://district5.scenecinemas.com/movie-details/eben-meen-fehom-arabic.html"
-    },
-    {
-      "title": "Minions & Monsters (2D)",
-      "url": "https://district5.scenecinemas.com/movie-details/minions-monsters-2d-english.html"
     }
   ]
 }
