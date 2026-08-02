@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-08-02 20:43:36 UTC",
-  "count": 8,
+  "last_check_utc": "2026-08-02 22:47:09 UTC",
+  "count": 9,
   "movies": [
     {
       "title": "The Odyssey",
@@ -9,6 +9,10 @@
     {
       "title": "Spider-Man: Brand New Day  (2D)",
       "url": "https://district5.scenecinemas.com/movie-details/spider-man-brand-new-day.html"
+    },
+    {
+      "title": "El Gawahergy",
+      "url": "https://district5.scenecinemas.com/movie-details/el-gawahergy.html"
     },
     {
       "title": "Khali Balak Min Nafsik",
