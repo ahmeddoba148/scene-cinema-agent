@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-08-04 22:54:23 UTC",
-  "count": 9,
+  "last_check_utc": "2026-08-05 01:49:14 UTC",
+  "count": 8,
   "movies": [
     {
       "title": "The Odyssey",
@@ -27,16 +27,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
     },
     {
-      "title": "Moana (2D)",
-      "url": "https://district5.scenecinemas.com/movie-details/moana-english-2d-2026.html"
-    },
-    {
       "title": "Toy Story 5 2D",
       "url": "https://district5.scenecinemas.com/movie-details/toy-story-5-2d.html"
     },
     {
-      "title": "7 Dogs",
-      "url": "https://district5.scenecinemas.com/movie-details/7-dogs.html"
+      "title": "Moana (2D)",
+      "url": "https://district5.scenecinemas.com/movie-details/moana-english-2d-2026.html"
     }
   ]
 }
