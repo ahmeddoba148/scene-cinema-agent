@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-08-10 03:45:15 UTC",
+  "last_check_utc": "2026-08-10 07:15:06 UTC",
   "count": 8,
   "movies": [
     {
@@ -34,7 +34,5 @@
       "title": "Moana (2D)",
       "url": "https://district5.scenecinemas.com/movie-details/moana-english-2d-2026.html"
     }
-  ],
-  "last_error": "522 Server Error: <none> for url: https://district5.scenecinemas.com/home",
-  "last_error_utc": "2026-08-10 05:18:21 UTC"
+  ]
 }
