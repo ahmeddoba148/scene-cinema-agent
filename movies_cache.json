@@ -1,10 +1,14 @@
 {
-  "last_check_utc": "2026-08-10 22:28:02 UTC",
-  "count": 8,
+  "last_check_utc": "2026-08-11 01:05:52 UTC",
+  "count": 9,
   "movies": [
     {
       "title": "The Odyssey",
       "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
+    },
+    {
+      "title": "Mahmoud Eltany",
+      "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
     },
     {
       "title": "Spider-Man: Brand New Day  (2D)",
