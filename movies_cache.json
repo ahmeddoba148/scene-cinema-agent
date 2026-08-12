@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-08-12 09:03:47 UTC",
-  "count": 7,
+  "last_check_utc": "2026-08-12 10:53:51 UTC",
+  "count": 8,
   "movies": [
     {
       "title": "The Odyssey",
@@ -25,6 +25,10 @@
     {
       "title": "Sakr w Canaria",
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
+    },
+    {
+      "title": "Shamshon w Delilah",
+      "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html"
     },
     {
       "title": "Toy Story 5 2D",
