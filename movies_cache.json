@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-08-11 22:33:13 UTC",
-  "count": 9,
+  "last_check_utc": "2026-08-12 01:13:47 UTC",
+  "count": 7,
   "movies": [
     {
       "title": "The Odyssey",
@@ -23,20 +23,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/khali-balak-min-nafsik-arabic.html"
     },
     {
-      "title": "Shamshon w Delilah",
-      "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html"
-    },
-    {
       "title": "Sakr w Canaria",
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
     },
     {
       "title": "Toy Story 5 2D",
       "url": "https://district5.scenecinemas.com/movie-details/toy-story-5-2d.html"
-    },
-    {
-      "title": "Moana (2D)",
-      "url": "https://district5.scenecinemas.com/movie-details/moana-english-2d-2026.html"
     }
   ]
 }
