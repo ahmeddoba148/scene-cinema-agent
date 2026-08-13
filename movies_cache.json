@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-08-13 10:54:58 UTC",
-  "count": 9,
+  "last_check_utc": "2026-08-13 12:51:34 UTC",
+  "count": 8,
   "movies": [
     {
       "title": "The Odyssey",
@@ -27,16 +27,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/the-end-of-oak-street.html"
     },
     {
-      "title": "Paw Patrol: The Dino Movie",
-      "url": "https://district5.scenecinemas.com/movie-details/paw-patrol-the-dino-movie.html"
-    },
-    {
       "title": "Sakr w Canaria",
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
     },
     {
-      "title": "Shamshon w Delilah",
-      "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html"
+      "title": "Paw Patrol: The Dino Movie",
+      "url": "https://district5.scenecinemas.com/movie-details/paw-patrol-the-dino-movie.html"
     }
   ]
 }
