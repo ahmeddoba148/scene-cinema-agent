@@ -38,5 +38,7 @@
       "title": "Shamshon w Delilah",
       "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html"
     }
-  ]
+  ],
+  "last_error": "HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)",
+  "last_error_utc": "2026-08-14 01:14:56 UTC"
 }
