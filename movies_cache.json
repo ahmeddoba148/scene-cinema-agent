@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-08-13 22:32:38 UTC",
-  "count": 9,
+  "last_check_utc": "2026-08-14 03:58:42 UTC",
+  "count": 8,
   "movies": [
     {
       "title": "The Odyssey",
@@ -23,22 +23,16 @@
       "url": "https://district5.scenecinemas.com/movie-details/khali-balak-min-nafsik-arabic.html"
     },
     {
+      "title": "Paw Patrol: The Dino Movie",
+      "url": "https://district5.scenecinemas.com/movie-details/paw-patrol-the-dino-movie.html"
+    },
+    {
       "title": "The End of Oak Street",
       "url": "https://district5.scenecinemas.com/movie-details/the-end-of-oak-street.html"
     },
     {
       "title": "Sakr w Canaria",
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
-    },
-    {
-      "title": "Paw Patrol: The Dino Movie",
-      "url": "https://district5.scenecinemas.com/movie-details/paw-patrol-the-dino-movie.html"
-    },
-    {
-      "title": "Shamshon w Delilah",
-      "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html"
     }
-  ],
-  "last_error": "HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)",
-  "last_error_utc": "2026-08-14 01:14:56 UTC"
+  ]
 }
