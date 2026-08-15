@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-08-15 20:13:27 UTC",
-  "count": 9,
+  "last_check_utc": "2026-08-15 22:11:59 UTC",
+  "count": 10,
   "movies": [
     {
       "title": "The Odyssey",
@@ -37,6 +37,10 @@
     {
       "title": "Shamshon w Delilah",
       "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html"
+    },
+    {
+      "title": "Moana (2D)",
+      "url": "https://district5.scenecinemas.com/movie-details/moana-english-2d-2026.html"
     }
   ]
 }
