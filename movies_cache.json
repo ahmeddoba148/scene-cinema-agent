@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-08-15 14:14:21 UTC",
-  "count": 8,
+  "last_check_utc": "2026-08-15 16:14:03 UTC",
+  "count": 9,
   "movies": [
     {
       "title": "The Odyssey",
@@ -33,6 +33,10 @@
     {
       "title": "Paw Patrol: The Dino Movie",
       "url": "https://district5.scenecinemas.com/movie-details/paw-patrol-the-dino-movie.html"
+    },
+    {
+      "title": "Shamshon w Delilah",
+      "url": "https://district5.scenecinemas.com/movie-details/shamshon-w-delilah.html"
     }
   ]
 }
