@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-08-24 08:37:59 UTC",
+  "last_check_utc": "2026-08-24 12:31:22 UTC",
   "count": 11,
   "movies": [
     {
@@ -46,7 +46,5 @@
       "title": "Sakr w Canaria",
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
     }
-  ],
-  "last_error": "403 Client Error: Forbidden for url: https://district5.scenecinemas.com/home",
-  "last_error_utc": "2026-08-24 10:29:28 UTC"
+  ]
 }
