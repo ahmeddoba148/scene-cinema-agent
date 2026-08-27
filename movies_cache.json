@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-08-26 22:37:00 UTC",
-  "count": 11,
+  "last_check_utc": "2026-08-27 06:21:39 UTC",
+  "count": 12,
   "movies": [
     {
       "title": "The Odyssey",
@@ -31,16 +31,20 @@
       "url": "https://district5.scenecinemas.com/movie-details/insidious-out-of-the-further.html"
     },
     {
-      "title": "The End of Oak Street",
-      "url": "https://district5.scenecinemas.com/movie-details/the-end-of-oak-street.html"
+      "title": "The Dog Stars",
+      "url": "https://district5.scenecinemas.com/movie-details/the-dog-stars.html"
+    },
+    {
+      "title": "Coyote VS Acme",
+      "url": "https://district5.scenecinemas.com/movie-details/coyote-vs-acme-movie.html"
     },
     {
       "title": "Paw Patrol: The Dino Movie",
       "url": "https://district5.scenecinemas.com/movie-details/paw-patrol-the-dino-movie.html"
     },
     {
-      "title": "El Set Lamma",
-      "url": "https://district5.scenecinemas.com/movie-details/el_set_lamma.html"
+      "title": "The End of Oak Street",
+      "url": "https://district5.scenecinemas.com/movie-details/the-end-of-oak-street.html"
     },
     {
       "title": "Sakr w Canaria",
