@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-09-02 23:43:28 UTC",
-  "count": 12,
+  "last_check_utc": "2026-09-03 02:19:17 UTC",
+  "count": 13,
   "movies": [
     {
       "title": "The Odyssey",
@@ -27,20 +27,24 @@
       "url": "https://district5.scenecinemas.com/movie-details/mutiny.html"
     },
     {
-      "title": "Insidious: Out Of The Further",
-      "url": "https://district5.scenecinemas.com/movie-details/insidious-out-of-the-further.html"
+      "title": "Fall 2: Deadpoint",
+      "url": "https://district5.scenecinemas.com/movie-details/fall_2.html"
     },
     {
       "title": "The Dog Stars",
       "url": "https://district5.scenecinemas.com/movie-details/the-dog-stars.html"
     },
     {
-      "title": "Coyote VS Acme",
-      "url": "https://district5.scenecinemas.com/movie-details/coyote-vs-acme-movie.html"
+      "title": "Insidious: Out Of The Further",
+      "url": "https://district5.scenecinemas.com/movie-details/insidious-out-of-the-further.html"
     },
     {
       "title": "Paw Patrol: The Dino Movie",
       "url": "https://district5.scenecinemas.com/movie-details/paw-patrol-the-dino-movie.html"
+    },
+    {
+      "title": "Coyote VS Acme",
+      "url": "https://district5.scenecinemas.com/movie-details/coyote-vs-acme-movie.html"
     },
     {
       "title": "The End of Oak Street",
