@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-09-09 02:22:45 UTC",
+  "last_check_utc": "2026-09-09 08:29:56 UTC",
   "count": 13,
   "movies": [
     {
@@ -39,6 +39,10 @@
       "url": "https://district5.scenecinemas.com/movie-details/insidious-out-of-the-further.html"
     },
     {
+      "title": "Paw Patrol: The Dino Movie",
+      "url": "https://district5.scenecinemas.com/movie-details/paw-patrol-the-dino-movie.html"
+    },
+    {
       "title": "Coyote VS Acme",
       "url": "https://district5.scenecinemas.com/movie-details/coyote-vs-acme-movie.html"
     },
@@ -49,10 +53,6 @@
     {
       "title": "Sakr w Canaria",
       "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
-    },
-    {
-      "title": "Paw Patrol: The Dino Movie",
-      "url": "https://district5.scenecinemas.com/movie-details/paw-patrol-the-dino-movie.html"
     }
   ]
 }
