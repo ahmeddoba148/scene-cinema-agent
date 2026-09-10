@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-09-10 02:22:05 UTC",
-  "count": 11,
+  "last_check_utc": "2026-09-10 08:32:02 UTC",
+  "count": 13,
   "movies": [
     {
       "title": "The Odyssey",
@@ -35,8 +35,16 @@
       "url": "https://district5.scenecinemas.com/movie-details/mutiny.html"
     },
     {
+      "title": "THE UPRISING",
+      "url": "https://district5.scenecinemas.com/movie-details/the-uprising.html"
+    },
+    {
       "title": "Insidious: Out Of The Further",
       "url": "https://district5.scenecinemas.com/movie-details/insidious-out-of-the-further.html"
+    },
+    {
+      "title": "Cats in the Museum: Treasures of Egypt",
+      "url": "https://district5.scenecinemas.com/movie-details/cats-in-the-museum-treasures-of-egypt.html"
     },
     {
       "title": "The End of Oak Street",
