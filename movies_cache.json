@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-09-16 22:30:42 UTC",
-  "count": 13,
+  "last_check_utc": "2026-09-17 02:42:05 UTC",
+  "count": 14,
   "movies": [
     {
       "title": "The Odyssey",
@@ -23,16 +23,28 @@
       "url": "https://district5.scenecinemas.com/movie-details/khali-balak-min-nafsik-arabic.html"
     },
     {
-      "title": "Practical Magic 2",
-      "url": "https://district5.scenecinemas.com/movie-details/practical_magic_2.html"
-    },
-    {
       "title": "Fall 2: Deadpoint",
       "url": "https://district5.scenecinemas.com/movie-details/fall_2.html"
     },
     {
+      "title": "Resident Evil",
+      "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
+    },
+    {
+      "title": "Pressure",
+      "url": "https://district5.scenecinemas.com/movie-details/pressure.html"
+    },
+    {
       "title": "Mutiny",
       "url": "https://district5.scenecinemas.com/movie-details/mutiny.html"
+    },
+    {
+      "title": "Tad and the Magic Lamp",
+      "url": "https://district5.scenecinemas.com/movie-details/tad-and-the-magic-lamp.html"
+    },
+    {
+      "title": "Practical Magic 2",
+      "url": "https://district5.scenecinemas.com/movie-details/practical_magic_2.html"
     },
     {
       "title": "THE UPRISING",
@@ -43,16 +55,8 @@
       "url": "https://district5.scenecinemas.com/movie-details/insidious-out-of-the-further.html"
     },
     {
-      "title": "Cats in the Museum: Treasures of Egypt",
-      "url": "https://district5.scenecinemas.com/movie-details/cats-in-the-museum-treasures-of-egypt.html"
-    },
-    {
       "title": "The End of Oak Street",
       "url": "https://district5.scenecinemas.com/movie-details/the-end-of-oak-street.html"
-    },
-    {
-      "title": "Sakr w Canaria",
-      "url": "https://district5.scenecinemas.com/movie-details/sakr-w-canaria-arabic.html"
     }
   ]
 }
