@@ -1,7 +1,11 @@
 {
-  "last_check_utc": "2026-09-18 13:59:45 UTC",
-  "count": 14,
+  "last_check_utc": "2026-09-18 17:35:30 UTC",
+  "count": 15,
   "movies": [
+    {
+      "title": "Avengers: Endgame Encore (Re-Release)",
+      "url": "https://district5.scenecinemas.com/movie-details/avengers-endgame-encore.html"
+    },
     {
       "title": "The Odyssey",
       "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
