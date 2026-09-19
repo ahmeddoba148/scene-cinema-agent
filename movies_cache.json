@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-09-19 13:36:27 UTC",
+  "last_check_utc": "2026-09-19 19:49:19 UTC",
   "count": 15,
   "movies": [
     {
@@ -62,7 +62,5 @@
       "title": "The End of Oak Street",
       "url": "https://district5.scenecinemas.com/movie-details/the-end-of-oak-street.html"
     }
-  ],
-  "last_error": "403 Client Error: Forbidden for url: https://district5.scenecinemas.com/home",
-  "last_error_utc": "2026-09-19 16:56:54 UTC"
+  ]
 }
