@@ -1,10 +1,14 @@
 {
-  "last_check_utc": "2026-09-20 17:11:14 UTC",
-  "count": 15,
+  "last_check_utc": "2026-09-20 20:03:38 UTC",
+  "count": 16,
   "movies": [
     {
       "title": "Avengers: Endgame Encore (Re-Release)",
       "url": "https://district5.scenecinemas.com/movie-details/avengers-endgame-encore.html"
+    },
+    {
+      "title": "Heart of the Beast",
+      "url": "https://district5.scenecinemas.com/movie-details/heart-of-the-beast.html"
     },
     {
       "title": "The Odyssey",
@@ -17,14 +21,6 @@
     {
       "title": "Spider-Man: Brand New Day  (2D)",
       "url": "https://district5.scenecinemas.com/movie-details/spider-man-brand-new-day.html"
-    },
-    {
-      "title": "El Gawahergy",
-      "url": "https://district5.scenecinemas.com/movie-details/el-gawahergy.html"
-    },
-    {
-      "title": "Khali Balak Min Nafsik",
-      "url": "https://district5.scenecinemas.com/movie-details/khali-balak-min-nafsik-arabic.html"
     },
     {
       "title": "Fall 2: Deadpoint",
@@ -47,6 +43,10 @@
       "url": "https://district5.scenecinemas.com/movie-details/tad-and-the-magic-lamp.html"
     },
     {
+      "title": "El Gawahergy",
+      "url": "https://district5.scenecinemas.com/movie-details/el-gawahergy.html"
+    },
+    {
       "title": "Practical Magic 2",
       "url": "https://district5.scenecinemas.com/movie-details/practical_magic_2.html"
     },
@@ -61,6 +61,10 @@
     {
       "title": "The End of Oak Street",
       "url": "https://district5.scenecinemas.com/movie-details/the-end-of-oak-street.html"
+    },
+    {
+      "title": "Khali Balak Min Nafsik",
+      "url": "https://district5.scenecinemas.com/movie-details/khali-balak-min-nafsik-arabic.html"
     }
   ]
 }
