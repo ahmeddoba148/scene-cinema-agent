@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-09-24 08:53:21 UTC",
+  "last_check_utc": "2026-09-24 14:32:43 UTC",
   "count": 15,
   "movies": [
     {
@@ -31,10 +31,6 @@
       "url": "https://district5.scenecinemas.com/movie-details/pressure.html"
     },
     {
-      "title": "Insidious: Out Of The Further",
-      "url": "https://district5.scenecinemas.com/movie-details/insidious-out-of-the-further.html"
-    },
-    {
       "title": "Resident Evil",
       "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
     },
@@ -45,6 +41,10 @@
     {
       "title": "Fall 2: Deadpoint",
       "url": "https://district5.scenecinemas.com/movie-details/fall_2.html"
+    },
+    {
+      "title": "Insidious: Out Of The Further",
+      "url": "https://district5.scenecinemas.com/movie-details/insidious-out-of-the-further.html"
     },
     {
       "title": "Mutiny",
