@@ -1,7 +1,11 @@
 {
-  "last_check_utc": "2026-09-25 19:44:02 UTC",
-  "count": 15,
+  "last_check_utc": "2026-09-25 22:58:53 UTC",
+  "count": 16,
   "movies": [
+    {
+      "title": "Matloub Aelyan",
+      "url": "https://district5.scenecinemas.com/movie-details/matloub-aelyan.html"
+    },
     {
       "title": "Avengers: Endgame Encore (Re-Release)",
       "url": "https://district5.scenecinemas.com/movie-details/avengers-endgame-encore.html"
@@ -15,12 +19,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
     },
     {
-      "title": "Mahmoud Eltany",
-      "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
-    },
-    {
       "title": "Spider-Man: Brand New Day  (2D)",
       "url": "https://district5.scenecinemas.com/movie-details/spider-man-brand-new-day.html"
+    },
+    {
+      "title": "Mahmoud Eltany",
+      "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
     },
     {
       "title": "Shish Dou",
