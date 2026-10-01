@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-10-01 00:56:55 UTC",
-  "count": 13,
+  "last_check_utc": "2026-10-01 08:04:52 UTC",
+  "count": 14,
   "movies": [
     {
       "title": "Matloub Aelyan",
@@ -25,6 +25,10 @@
     {
       "title": "Digger",
       "url": "https://district5.scenecinemas.com/movie-details/digger.html"
+    },
+    {
+      "title": "Verity",
+      "url": "https://district5.scenecinemas.com/movie-details/verity.html"
     },
     {
       "title": "Shish Dou",
