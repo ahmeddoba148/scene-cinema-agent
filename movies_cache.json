@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-09-30 20:25:36 UTC",
-  "count": 16,
+  "last_check_utc": "2026-10-01 00:56:55 UTC",
+  "count": 13,
   "movies": [
     {
       "title": "Matloub Aelyan",
@@ -23,20 +23,20 @@
       "url": "https://district5.scenecinemas.com/movie-details/spider-man-brand-new-day.html"
     },
     {
-      "title": "Mahmoud Eltany",
-      "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
+      "title": "Digger",
+      "url": "https://district5.scenecinemas.com/movie-details/digger.html"
     },
     {
       "title": "Shish Dou",
       "url": "https://district5.scenecinemas.com/movie-details/shish_dou.html"
     },
     {
-      "title": "Insidious: Out Of The Further",
-      "url": "https://district5.scenecinemas.com/movie-details/insidious-out-of-the-further.html"
-    },
-    {
       "title": "Resident Evil",
       "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
+    },
+    {
+      "title": "Mahmoud Eltany",
+      "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
     },
     {
       "title": "Pressure",
@@ -47,24 +47,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/tad-and-the-magic-lamp.html"
     },
     {
-      "title": "Fall 2: Deadpoint",
-      "url": "https://district5.scenecinemas.com/movie-details/fall_2.html"
-    },
-    {
-      "title": "Mutiny",
-      "url": "https://district5.scenecinemas.com/movie-details/mutiny.html"
-    },
-    {
       "title": "El Gawahergy",
       "url": "https://district5.scenecinemas.com/movie-details/el-gawahergy.html"
     },
     {
       "title": "Khali Balak Min Nafsik",
       "url": "https://district5.scenecinemas.com/movie-details/khali-balak-min-nafsik-arabic.html"
-    },
-    {
-      "title": "Practical Magic 2",
-      "url": "https://district5.scenecinemas.com/movie-details/practical_magic_2.html"
     }
   ]
 }
