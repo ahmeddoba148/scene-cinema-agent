@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-10-02 21:38:31 UTC",
+  "last_check_utc": "2026-10-03 00:51:00 UTC",
   "count": 14,
   "movies": [
     {
@@ -23,12 +23,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/spider-man-brand-new-day.html"
     },
     {
-      "title": "Digger",
-      "url": "https://district5.scenecinemas.com/movie-details/digger.html"
-    },
-    {
       "title": "Verity",
       "url": "https://district5.scenecinemas.com/movie-details/verity.html"
+    },
+    {
+      "title": "Digger",
+      "url": "https://district5.scenecinemas.com/movie-details/digger.html"
     },
     {
       "title": "Shish Dou",
