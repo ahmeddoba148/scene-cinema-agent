@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-10-08 19:35:09 UTC",
+  "last_check_utc": "2026-10-09 00:04:12 UTC",
   "count": 12,
   "movies": [
     {
@@ -31,6 +31,10 @@
       "url": "https://district5.scenecinemas.com/movie-details/other-mommy.html"
     },
     {
+      "title": "Shish Dou",
+      "url": "https://district5.scenecinemas.com/movie-details/shish_dou.html"
+    },
+    {
       "title": "Resident Evil",
       "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
     },
@@ -45,10 +49,6 @@
     {
       "title": "Tad and the Magic Lamp",
       "url": "https://district5.scenecinemas.com/movie-details/tad-and-the-magic-lamp.html"
-    },
-    {
-      "title": "Shish Dou",
-      "url": "https://district5.scenecinemas.com/movie-details/shish_dou.html"
     }
   ]
 }
