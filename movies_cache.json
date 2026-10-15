@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-10-14 22:53:36 UTC",
-  "count": 12,
+  "last_check_utc": "2026-10-15 02:34:25 UTC",
+  "count": 13,
   "movies": [
     {
       "title": "Matloub Aelyan",
@@ -23,32 +23,36 @@
       "url": "https://district5.scenecinemas.com/movie-details/spider-man-brand-new-day.html"
     },
     {
-      "title": "Verity",
-      "url": "https://district5.scenecinemas.com/movie-details/verity.html"
+      "title": "Whalefall",
+      "url": "https://district5.scenecinemas.com/movie-details/whalefall.html"
     },
     {
       "title": "Other Mommy",
       "url": "https://district5.scenecinemas.com/movie-details/other-mommy.html"
     },
     {
-      "title": "Resident Evil",
-      "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
-    },
-    {
       "title": "Mahmoud Eltany",
       "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
     },
     {
-      "title": "Digger",
-      "url": "https://district5.scenecinemas.com/movie-details/digger.html"
+      "title": "Street Fighter",
+      "url": "https://district5.scenecinemas.com/movie-details/street-fighter.html"
     },
     {
-      "title": "Shish Dou",
-      "url": "https://district5.scenecinemas.com/movie-details/shish_dou.html"
+      "title": "Resident Evil",
+      "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
+    },
+    {
+      "title": "Verity",
+      "url": "https://district5.scenecinemas.com/movie-details/verity.html"
     },
     {
       "title": "Tad and the Magic Lamp",
       "url": "https://district5.scenecinemas.com/movie-details/tad-and-the-magic-lamp.html"
+    },
+    {
+      "title": "Digger",
+      "url": "https://district5.scenecinemas.com/movie-details/digger.html"
     }
   ]
 }
