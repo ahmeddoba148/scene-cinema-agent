@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-10-15 02:34:25 UTC",
-  "count": 13,
+  "last_check_utc": "2026-10-15 08:42:57 UTC",
+  "count": 14,
   "movies": [
     {
       "title": "Matloub Aelyan",
@@ -45,6 +45,10 @@
     {
       "title": "Verity",
       "url": "https://district5.scenecinemas.com/movie-details/verity.html"
+    },
+    {
+      "title": "The Magic Faraway Tree",
+      "url": "https://district5.scenecinemas.com/movie-details/the_magic_faraway_tree.html"
     },
     {
       "title": "Tad and the Magic Lamp",
