@@ -1,7 +1,11 @@
 {
-  "last_check_utc": "2026-10-16 14:25:26 UTC",
-  "count": 14,
+  "last_check_utc": "2026-10-16 19:08:58 UTC",
+  "count": 15,
   "movies": [
+    {
+      "title": "Wala Kan Ala Albal",
+      "url": "https://district5.scenecinemas.com/movie-details/wala-kan-ala-albal.html"
+    },
     {
       "title": "Matloub Aelyan",
       "url": "https://district5.scenecinemas.com/movie-details/matloub-aelyan.html"
@@ -13,10 +17,6 @@
     {
       "title": "Heart of the Beast",
       "url": "https://district5.scenecinemas.com/movie-details/heart-of-the-beast.html"
-    },
-    {
-      "title": "The Odyssey",
-      "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
     },
     {
       "title": "Spider-Man: Brand New Day  (2D)",
@@ -45,6 +45,10 @@
     {
       "title": "Verity",
       "url": "https://district5.scenecinemas.com/movie-details/verity.html"
+    },
+    {
+      "title": "The Odyssey",
+      "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
     },
     {
       "title": "The Magic Faraway Tree",
