@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-10-17 23:40:09 UTC",
+  "last_check_utc": "2026-10-18 02:22:24 UTC",
   "count": 15,
   "movies": [
     {
@@ -31,16 +31,16 @@
       "url": "https://district5.scenecinemas.com/movie-details/other-mommy.html"
     },
     {
+      "title": "Resident Evil",
+      "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
+    },
+    {
       "title": "Mahmoud Eltany",
       "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
     },
     {
       "title": "Street Fighter",
       "url": "https://district5.scenecinemas.com/movie-details/street-fighter.html"
-    },
-    {
-      "title": "Resident Evil",
-      "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
     },
     {
       "title": "Verity",
