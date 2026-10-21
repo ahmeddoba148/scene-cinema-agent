@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-10-21 02:43:00 UTC",
+  "last_check_utc": "2026-10-21 09:00:35 UTC",
   "count": 14,
   "movies": [
     {
@@ -23,20 +23,20 @@
       "url": "https://district5.scenecinemas.com/movie-details/spider-man-brand-new-day.html"
     },
     {
-      "title": "Whalefall",
-      "url": "https://district5.scenecinemas.com/movie-details/whalefall.html"
-    },
-    {
       "title": "Other Mommy",
       "url": "https://district5.scenecinemas.com/movie-details/other-mommy.html"
     },
     {
-      "title": "Mahmoud Eltany",
-      "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
+      "title": "Whalefall",
+      "url": "https://district5.scenecinemas.com/movie-details/whalefall.html"
     },
     {
       "title": "Street Fighter",
       "url": "https://district5.scenecinemas.com/movie-details/street-fighter.html"
+    },
+    {
+      "title": "Digger",
+      "url": "https://district5.scenecinemas.com/movie-details/digger.html"
     },
     {
       "title": "Verity",
@@ -47,16 +47,16 @@
       "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
     },
     {
-      "title": "The Odyssey",
-      "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
-    },
-    {
       "title": "The Magic Faraway Tree",
       "url": "https://district5.scenecinemas.com/movie-details/the_magic_faraway_tree.html"
     },
     {
-      "title": "Digger",
-      "url": "https://district5.scenecinemas.com/movie-details/digger.html"
+      "title": "Mahmoud Eltany",
+      "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
+    },
+    {
+      "title": "The Odyssey",
+      "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
     }
   ]
 }
