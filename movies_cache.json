@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-10-20 22:50:49 UTC",
-  "count": 15,
+  "last_check_utc": "2026-10-21 02:43:00 UTC",
+  "count": 14,
   "movies": [
     {
       "title": "Wala Kan Ala Albal",
@@ -31,10 +31,6 @@
       "url": "https://district5.scenecinemas.com/movie-details/other-mommy.html"
     },
     {
-      "title": "Resident Evil",
-      "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
-    },
-    {
       "title": "Mahmoud Eltany",
       "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
     },
@@ -47,12 +43,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/verity.html"
     },
     {
-      "title": "The Odyssey",
-      "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
+      "title": "Resident Evil",
+      "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
     },
     {
-      "title": "Tad and the Magic Lamp",
-      "url": "https://district5.scenecinemas.com/movie-details/tad-and-the-magic-lamp.html"
+      "title": "The Odyssey",
+      "url": "https://district5.scenecinemas.com/movie-details/the-odyssey.html"
     },
     {
       "title": "The Magic Faraway Tree",
