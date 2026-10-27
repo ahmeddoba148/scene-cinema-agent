@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-10-27 03:06:22 UTC",
+  "last_check_utc": "2026-10-27 09:28:33 UTC",
   "count": 14,
   "movies": [
     {
@@ -23,12 +23,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/clayface.html"
     },
     {
-      "title": "The Dino Family",
-      "url": "https://district5.scenecinemas.com/movie-details/the-dino-family.html"
-    },
-    {
       "title": "Street Fighter",
       "url": "https://district5.scenecinemas.com/movie-details/street-fighter.html"
+    },
+    {
+      "title": "The Dino Family",
+      "url": "https://district5.scenecinemas.com/movie-details/the-dino-family.html"
     },
     {
       "title": "Whalefall",
