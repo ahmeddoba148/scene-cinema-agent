@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-10-27 20:19:57 UTC",
-  "count": 14,
+  "last_check_utc": "2026-10-28 00:50:39 UTC",
+  "count": 15,
   "movies": [
     {
       "title": "Wala Kan Ala Albal",
@@ -23,12 +23,16 @@
       "url": "https://district5.scenecinemas.com/movie-details/clayface.html"
     },
     {
-      "title": "Street Fighter",
-      "url": "https://district5.scenecinemas.com/movie-details/street-fighter.html"
+      "title": "Naseeb",
+      "url": "https://district5.scenecinemas.com/movie-details/naseeb-arabic.html"
     },
     {
       "title": "The Dino Family",
       "url": "https://district5.scenecinemas.com/movie-details/the-dino-family.html"
+    },
+    {
+      "title": "Street Fighter",
+      "url": "https://district5.scenecinemas.com/movie-details/street-fighter.html"
     },
     {
       "title": "Whalefall",
