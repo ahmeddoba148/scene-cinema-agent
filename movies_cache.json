@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-10-28 20:42:01 UTC",
-  "count": 15,
+  "last_check_utc": "2026-10-29 01:26:51 UTC",
+  "count": 13,
   "movies": [
     {
       "title": "Wala Kan Ala Albal",
@@ -19,8 +19,12 @@
       "url": "https://district5.scenecinemas.com/movie-details/heart-of-the-beast.html"
     },
     {
-      "title": "Clayface",
-      "url": "https://district5.scenecinemas.com/movie-details/clayface.html"
+      "title": "Hope",
+      "url": "https://district5.scenecinemas.com/movie-details/hope-korean.html"
+    },
+    {
+      "title": "Sense and Sensibility",
+      "url": "https://district5.scenecinemas.com/movie-details/sense-and-sensibility.html"
     },
     {
       "title": "Naseeb",
@@ -31,8 +35,8 @@
       "url": "https://district5.scenecinemas.com/movie-details/the-dino-family.html"
     },
     {
-      "title": "Street Fighter",
-      "url": "https://district5.scenecinemas.com/movie-details/street-fighter.html"
+      "title": "Clayface",
+      "url": "https://district5.scenecinemas.com/movie-details/clayface.html"
     },
     {
       "title": "Whalefall",
@@ -45,18 +49,6 @@
     {
       "title": "Verity",
       "url": "https://district5.scenecinemas.com/movie-details/verity.html"
-    },
-    {
-      "title": "Resident Evil",
-      "url": "https://district5.scenecinemas.com/movie-details/resident_evil.html"
-    },
-    {
-      "title": "The Magic Faraway Tree",
-      "url": "https://district5.scenecinemas.com/movie-details/the_magic_faraway_tree.html"
-    },
-    {
-      "title": "Mahmoud Eltany",
-      "url": "https://district5.scenecinemas.com/movie-details/mahmoud_eltany.html"
     },
     {
       "title": "The Odyssey",
