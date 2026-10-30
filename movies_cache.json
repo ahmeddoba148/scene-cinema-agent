@@ -1,7 +1,15 @@
 {
-  "last_check_utc": "2026-10-29 20:45:37 UTC",
-  "count": 14,
+  "last_check_utc": "2026-10-30 01:28:21 UTC",
+  "count": 15,
   "movies": [
+    {
+      "title": "Avengers: Doomsday",
+      "url": "https://district5.scenecinemas.com/movie-details/avengers-doomsday-infinity-vision-sx-4dx.html"
+    },
+    {
+      "title": "Dune: Part Three",
+      "url": "https://district5.scenecinemas.com/movie-details/dune-part-three.html"
+    },
     {
       "title": "Wala Kan Ala Albal",
       "url": "https://district5.scenecinemas.com/movie-details/wala-kan-ala-albal.html"
@@ -9,10 +17,6 @@
     {
       "title": "Matloub Aelyan",
       "url": "https://district5.scenecinemas.com/movie-details/matloub-aelyan.html"
-    },
-    {
-      "title": "Avengers: Endgame Encore (Re-Release)",
-      "url": "https://district5.scenecinemas.com/movie-details/avengers-endgame-encore.html"
     },
     {
       "title": "Heart of the Beast",
