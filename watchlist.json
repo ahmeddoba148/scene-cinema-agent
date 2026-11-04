@@ -14,5 +14,12 @@
     "alerted": true,
     "created_utc": "2026-07-06 08:13:00 UTC",
     "alerted_utc": "2026-07-08 15:57:46 UTC"
+  },
+  {
+    "movie": "Wala Kan Ala Albal",
+    "url": "https://district5.scenecinemas.com/movie-details/wala-kan-ala-albal.html",
+    "date": "06-11-2026",
+    "alerted": false,
+    "created_utc": "2026-11-04 04:10:09 UTC"
   }
 ]
