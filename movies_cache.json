@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-11-12 21:58:49 UTC",
-  "count": 13,
+  "last_check_utc": "2026-11-13 02:27:11 UTC",
+  "count": 12,
   "movies": [
     {
       "title": "Avengers: Doomsday",
@@ -33,10 +33,6 @@
     {
       "title": "The Cat In The Hat",
       "url": "https://district5.scenecinemas.com/movie-details/the-cat-in-the-hat.html"
-    },
-    {
-      "title": "Naseeb",
-      "url": "https://district5.scenecinemas.com/movie-details/naseeb-arabic.html"
     },
     {
       "title": "Clayface",
