@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-11-18 22:47:17 UTC",
-  "count": 13,
+  "last_check_utc": "2026-11-19 05:17:11 UTC",
+  "count": 14,
   "movies": [
     {
       "title": "Avengers: Doomsday",
@@ -27,28 +27,32 @@
       "url": "https://district5.scenecinemas.com/movie-details/wala-kan-ala-albal.html"
     },
     {
+      "title": "I Play Rocky",
+      "url": "https://district5.scenecinemas.com/movie-details/i-play-rocky.html"
+    },
+    {
       "title": "Matloub Aelyan",
       "url": "https://district5.scenecinemas.com/movie-details/matloub-aelyan.html"
+    },
+    {
+      "title": "Crypto",
+      "url": "https://district5.scenecinemas.com/movie-details/crypto-arabic.html"
+    },
+    {
+      "title": "Forgotten Island",
+      "url": "https://district5.scenecinemas.com/movie-details/forgotten-island.html"
+    },
+    {
+      "title": "The Hunger Games: Sunrise on the Reaping",
+      "url": "https://district5.scenecinemas.com/movie-details/the-hunger-games-sunrise-on-the-reaping.html"
     },
     {
       "title": "The Cat In The Hat",
       "url": "https://district5.scenecinemas.com/movie-details/the-cat-in-the-hat.html"
     },
     {
-      "title": "Naseeb",
-      "url": "https://district5.scenecinemas.com/movie-details/naseeb-arabic.html"
-    },
-    {
       "title": "Clayface",
       "url": "https://district5.scenecinemas.com/movie-details/clayface.html"
-    },
-    {
-      "title": "Whalefall",
-      "url": "https://district5.scenecinemas.com/movie-details/whalefall.html"
-    },
-    {
-      "title": "Heart of the Beast",
-      "url": "https://district5.scenecinemas.com/movie-details/heart-of-the-beast.html"
     },
     {
       "title": "How to Rob a Bank",
