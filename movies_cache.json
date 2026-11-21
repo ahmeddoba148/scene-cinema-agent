@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-11-20 22:27:01 UTC",
-  "count": 14,
+  "last_check_utc": "2026-11-21 04:58:19 UTC",
+  "count": 13,
   "movies": [
     {
       "title": "Avengers: Doomsday",
@@ -53,10 +53,6 @@
     {
       "title": "Clayface",
       "url": "https://district5.scenecinemas.com/movie-details/clayface.html"
-    },
-    {
-      "title": "How to Rob a Bank",
-      "url": "https://district5.scenecinemas.com/movie-details/how_to_rob_a_bank.html"
     }
   ]
 }
