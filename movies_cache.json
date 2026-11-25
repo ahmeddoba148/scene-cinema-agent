@@ -1,6 +1,6 @@
 {
-  "last_check_utc": "2026-11-25 00:15:13 UTC",
-  "count": 14,
+  "last_check_utc": "2026-11-25 10:43:48 UTC",
+  "count": 13,
   "movies": [
     {
       "title": "Avengers: Doomsday",
@@ -11,20 +11,20 @@
       "url": "https://district5.scenecinemas.com/movie-details/hadoota-arabic.html"
     },
     {
-      "title": "Ebenezer",
-      "url": "https://district5.scenecinemas.com/movie-details/ebenezer.html"
-    },
-    {
       "title": "Dune: Part Three",
       "url": "https://district5.scenecinemas.com/movie-details/dune-part-three.html"
     },
     {
-      "title": "Godzilla Minus Zero",
-      "url": "https://district5.scenecinemas.com/movie-details/godzilla-minus-zero.html"
+      "title": "Leila Bazet Khales",
+      "url": "https://district5.scenecinemas.com/movie-details/lela-bazit-khalis-arabic.html"
     },
     {
       "title": "Wala Kan Ala Albal",
       "url": "https://district5.scenecinemas.com/movie-details/wala-kan-ala-albal.html"
+    },
+    {
+      "title": "Ebenezer",
+      "url": "https://district5.scenecinemas.com/movie-details/ebenezer.html"
     },
     {
       "title": "I Play Rocky",
@@ -53,10 +53,6 @@
     {
       "title": "Clayface",
       "url": "https://district5.scenecinemas.com/movie-details/clayface.html"
-    },
-    {
-      "title": "How to Rob a Bank",
-      "url": "https://district5.scenecinemas.com/movie-details/how_to_rob_a_bank.html"
     }
   ]
 }
