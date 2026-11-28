@@ -1,5 +1,5 @@
 {
-  "last_check_utc": "2026-11-28 00:54:02 UTC",
+  "last_check_utc": "2026-11-28 09:38:58 UTC",
   "count": 16,
   "movies": [
     {
@@ -23,10 +23,6 @@
       "url": "https://district5.scenecinemas.com/movie-details/wala-kan-ala-albal.html"
     },
     {
-      "title": "The Hunger Games: Sunrise on the Reaping",
-      "url": "https://district5.scenecinemas.com/movie-details/the-hunger-games-sunrise-on-the-reaping.html"
-    },
-    {
       "title": "Hexed",
       "url": "https://district5.scenecinemas.com/movie-details/hexed.html"
     },
@@ -45,6 +41,10 @@
     {
       "title": "Crypto",
       "url": "https://district5.scenecinemas.com/movie-details/crypto-arabic.html"
+    },
+    {
+      "title": "The Hunger Games: Sunrise on the Reaping",
+      "url": "https://district5.scenecinemas.com/movie-details/the-hunger-games-sunrise-on-the-reaping.html"
     },
     {
       "title": "I Play Rocky",
